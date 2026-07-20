@@ -9,18 +9,17 @@
   - `_index.md` — главная страница
   - `about.md` — страница "Обо мне" (url: /обо-мне/)
   - `rasskaziki.md` — рассказики
-  - `chitatelskiy-dnevnik.md` — читательский дневник
-  - `ssylki.md` — ссылки
-  - `consultations.md` — консультации
-  - `contacts.md` — контакты
-  - `pricing.md` — цены
+  - `chitatelskiy-dnevnik/` — читательский дневник (раздел)
+  - `sluchai/` — случаи из практики (раздел)
+  - `stati/` — статьи (раздел)
+  - `voprosy/` — вопросы и ответы (раздел)
 - `layouts/` — шаблоны:
   - `index.html` — шаблон главной (class="container intro")
   - `_default/baseof.html` — базовый шаблон
   - `_default/single.html` — шаблон обычных страниц (class="container single-page")
   - `partials/` — частичные шаблоны (head.html, header.html, footer.html)
 - `assets/css/custom.css` — все стили проекта
-- `static/images/` — изображения (photo.png, banner.jpg, banner.svg, header.jpg)
+- `static/images/` — изображения (photo.png, banner.jpg)
 
 ## Ключевые особенности
 - Баннер (banner.jpg) отображается на ВСЕХ страницах (убрано условие .IsHome)
