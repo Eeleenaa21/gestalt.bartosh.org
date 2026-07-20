@@ -1,7 +1,8 @@
 <div class="banner-section">
   <div class="container">
     <div class="banner">
-      <img class="banner-image" src="{{ "/images/banner.jpg" | relURL }}" alt="Тёплый нейтральный баннер для сайта Елены Бартош">
+      {{ $banner := resources.Get "images/banner.jpg" }}
+      <img class="banner-image" src="{{ $banner.Permalink }}" alt="Гештальт-терапевт Елена Бартош" />
       <div class="banner-overlay">
         <p class="banner-role">Гештальт-терапевт</p>
         <h2>Елена Бартош</h2>
