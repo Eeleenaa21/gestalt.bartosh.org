@@ -335,23 +335,25 @@ img {
 }
 
 .articles-list a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.articles-list a:hover {
   color: var(--text);
   text-decoration: none;
 }
 
-.articles-list a:hover {
-  color: var(--accent-strong);
-  text-decoration: underline;
-}
-
 .content-block a {
-  color: var(--text);
+  color: var(--accent-strong);
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
 
 .content-block a:hover {
-  color: var(--accent-strong);
+  color: var(--text);
+  text-decoration: none;
 }
 
 .site-footer {
