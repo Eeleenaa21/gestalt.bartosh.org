@@ -7,4 +7,4 @@ menu:
     weight: 3
 ---
 
-![Елена Бартош](/images/photo.png)
+![Елена Бартош](images/photo.png)
