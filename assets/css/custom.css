@@ -334,6 +334,26 @@ img {
   margin-top: 0;
 }
 
+.articles-list a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.articles-list a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.content-block a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.content-block a:hover {
+  color: var(--accent-strong);
+}
+
 .site-footer {
   border-top: 1px solid rgba(135, 109, 87, 0.12);
   padding: 0.45rem 0 0.55rem;
