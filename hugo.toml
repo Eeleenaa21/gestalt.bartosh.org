@@ -4,6 +4,7 @@ summarylength = 15
 enableEmoji = true
 enableRobotsTXT = true
 disableKinds = ["RSS", "sitemap", "404", "taxonomy", "term"]
+canonifyURLs = true
 
 [markup.goldmark.renderer]
 unsafe = true
