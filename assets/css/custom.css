@@ -33,6 +33,49 @@ img {
   max-width: 100%;
 }
 
+img[src="/images/image.png.png"] {
+  float: right;
+  width: 220px;
+  max-width: 40%;
+  margin: 0.2rem 0 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(47, 59, 70, 0.12);
+}
+
+p:has(img[src="/images/image.png.png"]) + blockquote {
+  float: right;
+  clear: right;
+  width: 220px;
+  max-width: 40%;
+  margin: 0 0 1.1rem 1.5rem;
+  padding: 0;
+  border: 0;
+  color: var(--text);
+  font-style: normal;
+}
+
+p:has(img[src="/images/image.png.png"]) + blockquote p {
+  margin: 0 0 0.3rem;
+}
+
+@media (max-width: 700px) {
+  img[src="/images/image.png.png"] {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 0 1rem 0;
+  }
+
+  p:has(img[src="/images/image.png.png"]) + blockquote {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 0 1rem 0;
+  }
+}
+
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
