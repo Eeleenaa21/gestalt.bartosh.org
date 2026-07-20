@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #eef3f6;
-  --surface: #fcfcfb;
-  --surface-strong: #e5ecf1;
-  --text: #2f3b46;
-  --muted: #5f6b76;
-  --accent: #5f7b8f;
-  --accent-strong: #48657a;
-  --border: #d4dde4;
-  --font-serif: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --bg: #e8e2d8;
+  --surface: #f7f5f1;
+  --surface-strong: #e2ddd3;
+  --text: #2f2e2a;
+  --muted: #6a6862;
+  --accent: #6e756f;
+  --accent-strong: #525a56;
+  --border: #d9d4ca;
+  --font-serif: "Georgia", "Times New Roman", serif;
 }
 
 * {
@@ -18,10 +18,11 @@
 body {
   margin: 0;
   font-family: var(--font-serif);
-  background: linear-gradient(180deg, #f5f8fa 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #f8f6f1 0%, #e8e2d8 100%) !important;
   color: var(--text);
   line-height: 1.7;
   font-size: 1.04rem;
+  min-height: 100vh;
 }
 
 h1, h2, h3, .brand, .hero-eyebrow, .eyebrow, .button, .profile-name {
@@ -123,15 +124,16 @@ p:has(img[src="/images/image.png.png"]) + blockquote p {
 }
 
 .page {
-  padding: 4rem 0 5rem;
+  padding: 2rem 0 5rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(236,235,230,0.32) 100%);
 }
 
 .hero {
-  background: linear-gradient(135deg, #f7fafc 0%, #e8eef3 100%);
+  background: linear-gradient(135deg, #f8f7f2 0%, #eeebe2 100%);
   border: 1px solid var(--border);
   border-radius: 28px;
   padding: clamp(2rem, 4vw, 3.2rem);
-  box-shadow: 0 16px 40px rgba(72, 92, 108, 0.08);
+  box-shadow: 0 10px 24px rgba(93, 111, 106, 0.05);
   margin-bottom: 2rem;
 }
 
@@ -331,7 +333,7 @@ p:has(img[src="/images/image.png.png"]) + blockquote p {
 
 .site-footer {
   border-top: 1px solid rgba(135, 109, 87, 0.12);
-  padding: 1.3rem 0 2rem;
+  padding: 0.45rem 0 0.55rem;
   background: rgba(255, 253, 251, 0.9);
 }
 
@@ -340,7 +342,9 @@ p:has(img[src="/images/image.png.png"]) + blockquote p {
   justify-content: space-between;
   gap: 1rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  align-items: center;
+  min-height: 1.6rem;
 }
 
 @media (max-width: 760px) {
