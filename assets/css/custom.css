@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, .banner-eyebrow {
+h1, h2, h3, .banner-role {
   font-family: var(--font-serif);
   letter-spacing: 0.01em;
 }
@@ -166,7 +166,7 @@ img {
   color: white;
 }
 
-.banner-eyebrow {
+.banner-role {
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 0.76rem;
