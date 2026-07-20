@@ -34,7 +34,7 @@ img {
 }
 
 /* Фото Елены на главной странице — обтекание справа */
-.intro img[src="/images/photo.png"] {
+.intro img[src$="photo.png"] {
   width: 200px;
   max-width: 40%;
   float: right;
@@ -44,7 +44,7 @@ img {
 }
 
 /* Блок с адресом кабинета на главной — под фото, тоже справа */
-.intro p:has(img[src="/images/photo.png"]) + blockquote {
+.intro p:has(img[src$="photo.png"]) + blockquote {
   float: right;
   clear: right;
   width: 200px;
@@ -56,12 +56,12 @@ img {
   font-style: normal;
 }
 
-.intro p:has(img[src="/images/photo.png"]) + blockquote p {
+.intro p:has(img[src$="photo.png"]) + blockquote p {
   margin: 0 0 0.3rem;
 }
 
 /* Фото Елены на страницах "Обо мне", "Статьи" и т.д. */
-.single-page img[src="/images/photo.png"] {
+.single-page img[src$="photo.png"] {
   float: right;
   width: 240px;
   max-width: 45%;
