@@ -8,7 +8,7 @@
       {{ .Content }}
     </div>
     <div class="articles-list">
-      {{ range .Pages.ByTitle }}
+      {{ range .Pages.ByWeight }}
         <article class="article-item">
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
           {{ .Summary | replaceRE "</p>[^<]*$" (printf " <a href=\"%s\">читать дальше</a></p>" .RelPermalink) | safeHTML }}
