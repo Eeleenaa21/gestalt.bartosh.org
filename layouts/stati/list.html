@@ -1,9 +1,5 @@
 {{ define "main" }}
   <article class="container single-page">
-    <header class="page-heading">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
-    </header>
     <div class="content-block">
       {{ .Content }}
     </div>
