@@ -8,30 +8,11 @@
       {{ .Content }}
     </div>
     <div class="articles-list">
-      {{ $categories := slice }}
       {{ range .Pages.ByTitle }}
-        {{ $cat := .Params.category }}
-        {{ $found := false }}
-        {{ range $categories }}
-          {{ if eq . $cat }}
-            {{ $found = true }}
-          {{ end }}
-        {{ end }}
-        {{ if not $found }}
-          {{ $categories = $categories | append $cat }}
-        {{ end }}
-      {{ end }}
-
-      {{ range sort $categories }}
-        <h2 class="category-title">{{ . }}</h2>
-        {{ range $.Pages.ByTitle }}
-          {{ if eq .Params.category . }}
-            <article class="article-item">
-              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-              <p>{{ .Summary }}</p>
-            </article>
-          {{ end }}
-        {{ end }}
+        <article class="article-item">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Summary }}</p>
+        </article>
       {{ end }}
     </div>
   </article>
