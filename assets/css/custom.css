@@ -338,22 +338,26 @@ img {
   color: var(--accent-strong);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
 }
 
 .articles-list a:hover {
   color: var(--text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .content-block a {
   color: var(--accent-strong);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
 }
 
 .content-block a:hover {
   color: var(--text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .site-footer {
