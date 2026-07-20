@@ -6,7 +6,7 @@ draft: false
 
 <div class="hero-visual">
   <div class="hero-banner">
-    <img class="hero-image" src="/images/header.jpg" alt="Елена Бартош">
+    <img class="hero-image" src="/images/banner.svg" alt="Тёплый нейтральный баннер для сайта Елены Бартош">
     <div class="hero-overlay">
       <p class="hero-eyebrow">Гештальт-терапевт</p>
       <h2>Елена Бартош</h2>

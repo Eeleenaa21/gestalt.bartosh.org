@@ -8,6 +8,7 @@
   --accent: #8b6f5d;
   --accent-strong: #6f503f;
   --border: #e7ddd2;
+  --font-serif: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 * {
@@ -16,10 +17,16 @@
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-serif);
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
+  font-size: 1.04rem;
+}
+
+h1, h2, h3, .brand, .hero-eyebrow, .eyebrow, .button, .profile-name {
+  font-family: var(--font-serif);
+  letter-spacing: 0.01em;
 }
 
 img {
