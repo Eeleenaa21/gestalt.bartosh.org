@@ -10,3 +10,9 @@ title = "Елена Бартош"
 author = "Елена Бартош"
 description = "Семейный консультант, гештальт-терапевт"
 keywords = ["гештальт-терапевт", "консультант", "Хельсинки", "онлайн"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        enableDefault = true
