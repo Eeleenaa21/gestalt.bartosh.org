@@ -11,7 +11,7 @@
       {{ range .Pages.ByTitle }}
         <article class="article-item">
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <p>{{ .Summary }} <a href="{{ .RelPermalink }}">читать дальше</a></p>
+          {{ .Summary }} <a href="{{ .RelPermalink }}">читать дальше</a>
         </article>
       {{ end }}
     </div>
