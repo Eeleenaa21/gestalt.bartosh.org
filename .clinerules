@@ -20,6 +20,7 @@
   - `partials/` — частичные шаблоны (head.html, header.html, footer.html)
 - `assets/css/custom.css` — все стили проекта
 - `static/images/` — изображения (photo.png, banner.jpg)
+- `scripts/` — скрипты для скачивания контента (download_articles.py, download_sluchai.py, download_voprosy.py, download_rasskaziki.py, download_chitatelskiy_dnevnik.py)
 
 ## Ключевые особенности
 - Баннер (banner.jpg) отображается на ВСЕХ страницах (убрано условие .IsHome)
