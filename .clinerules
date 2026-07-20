@@ -34,6 +34,21 @@
 - Шрифт: Georgia / Times New Roman
 - URL в русской транслитерации (например, /обо-мне/)
 
+## CSS-классы (custom.css)
+- `.banner-section` — верхний блок с баннером
+- `.banner` — сам баннер
+- `.banner-image` — картинка баннера
+- `.banner-overlay` — затемнение поверх баннера
+- `.banner-role` — текст "Гештальт-терапевт" (роль)
+- `.intro` — главная страница
+- `.single-page` — обычные страницы
+- `.site-header` — шапка с меню
+- `.site-nav` — навигация
+- `.page` — основной контент
+- `.articles-list` — список подстраниц в разделах
+- `.content-block` — текст страницы
+- `.site-footer` — подвал
+
 ## Технологии
 - Hugo v0.155.2
 - Hugo server: `hugo server --disableFastRender`
