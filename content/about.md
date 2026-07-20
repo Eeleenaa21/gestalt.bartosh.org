@@ -1,5 +1,4 @@
 ---
-title: "Обо мне:"
 url: "/обо-мне/"
 draft: false
 menu:
@@ -7,6 +6,8 @@ menu:
     name: "Обо мне"
     weight: 2
 ---
+
+# Обо мне:
 
 ![Елена Бартош](/images/photo.png)
 
