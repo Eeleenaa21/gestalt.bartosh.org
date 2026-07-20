@@ -1,6 +1,11 @@
 ---
+title: "Вопросы и ответы"
 url: "/вопросы-и-ответы/"
 draft: false
+menu:
+  main:
+    name: "Вопросы и ответы"
+    weight: 5
 ---
 
 ![Елена Бартош](/images/photo.png)

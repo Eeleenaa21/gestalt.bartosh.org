@@ -3,6 +3,10 @@ title: "Статьи"
 description: "Раздел с текстами и материалами"
 url: "/статьи/"
 draft: false
+menu:
+  main:
+    name: "Статьи"
+    weight: 3
 ---
 
 ![Елена Бартош](/images/photo.png)

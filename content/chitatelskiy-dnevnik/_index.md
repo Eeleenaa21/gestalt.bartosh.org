@@ -3,6 +3,10 @@ title: "Читательский дневник"
 description: "Заметки о прочитанных книгах"
 url: "/читательский-дневник/"
 draft: false
+menu:
+  main:
+    name: "Читательский дневник"
+    weight: 7
 ---
 
 ![Елена Бартош](/images/photo.png)

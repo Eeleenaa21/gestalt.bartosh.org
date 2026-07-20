@@ -1,6 +1,11 @@
 ---
+title: "Случаи из практики"
 url: "/случаи-из-практики/"
 draft: false
+menu:
+  main:
+    name: "Случаи из практики"
+    weight: 4
 ---
 
 ![Елена Бартош](/images/photo.png)

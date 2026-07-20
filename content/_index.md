@@ -2,6 +2,10 @@
 title: "Главная"
 description: "Гештальт-терапевт Елена Бартош"
 draft: false
+menu:
+  main:
+    name: "Главная"
+    weight: 1
 ---
 
 **Здравствуйте!**

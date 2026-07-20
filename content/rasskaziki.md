@@ -1,6 +1,11 @@
 ---
+title: "Рассказики"
 url: "/рассказики/"
 draft: false
+menu:
+  main:
+    name: "Рассказики"
+    weight: 6
 ---
 
 ![Елена Бартош](/images/photo.png)
