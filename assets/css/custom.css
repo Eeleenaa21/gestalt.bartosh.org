@@ -2,7 +2,6 @@
   color-scheme: light;
   --bg: #e8e2d8;
   --surface: #f7f5f1;
-  --surface-strong: #e2ddd3;
   --text: #2f2e2a;
   --muted: #6a6862;
   --accent: #6e756f;
@@ -25,7 +24,7 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, .hero-eyebrow {
+h1, h2, h3, .banner-eyebrow {
   font-family: var(--font-serif);
   letter-spacing: 0.01em;
 }
@@ -34,6 +33,7 @@ img {
   max-width: 100%;
 }
 
+/* Фото Елены на главной странице — обтекание справа */
 .intro img[src="/images/photo.png"] {
   width: 200px;
   max-width: 40%;
@@ -43,6 +43,7 @@ img {
   box-shadow: 0 10px 24px rgba(47, 59, 70, 0.12);
 }
 
+/* Блок с адресом кабинета на главной — под фото, тоже справа */
 .intro p:has(img[src="/images/photo.png"]) + blockquote {
   float: right;
   clear: right;
@@ -59,6 +60,7 @@ img {
   margin: 0 0 0.3rem;
 }
 
+/* Фото Елены на страницах "Обо мне", "Статьи" и т.д. */
 .single-page img[src="/images/photo.png"] {
   float: right;
   width: 240px;
@@ -80,11 +82,13 @@ img {
   }
 }
 
+/* Ограничивающий контейнер — ширина 1120px, отступы по краям */
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
 }
 
+/* Шапка с логотипом и меню */
 .site-header {
   border-bottom: 1px solid rgba(95, 123, 143, 0.14);
   background: rgba(252, 252, 252, 0.96);
@@ -117,24 +121,26 @@ img {
   color: var(--accent-strong);
 }
 
+/* Основное содержимое страницы (баннер + контент) */
 .page {
   padding: 2rem 0 5rem;
   background: linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(236,235,230,0.32) 100%);
 }
 
-.home-hero {
+/* Верхний блок с картинкой-баннером */
+.banner-section {
   padding: 1rem 0 0;
 }
 
-.home-hero .hero-banner {
+.banner-section .banner {
   border-radius: 0 0 24px 24px;
 }
 
-.home-hero .hero-image {
+.banner-section .banner-image {
   height: 196px;
 }
 
-.hero-banner {
+.banner {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
@@ -142,14 +148,14 @@ img {
   box-shadow: 0 12px 30px rgba(72, 96, 77, 0.08);
 }
 
-.hero-image {
+.banner-image {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
 
-.hero-overlay {
+.banner-overlay {
   position: absolute;
   inset: 0;
   display: flex;
@@ -160,19 +166,20 @@ img {
   color: white;
 }
 
-.hero-eyebrow {
+.banner-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 0.76rem;
   margin: 0 0 0.25rem;
 }
 
-.hero-overlay h2 {
+.banner-overlay h2 {
   margin: 0;
   font-size: clamp(1.5rem, 2.6vw, 2rem);
   line-height: 1.1;
 }
 
+/* Карточки контента: главная (intro) и обычные страницы (single-page) */
 .intro,
 .single-page {
   background: var(--surface);
@@ -182,6 +189,7 @@ img {
   margin-bottom: 1.25rem;
 }
 
+/* Заголовок страницы в разделах (Статьи, Случаи и т.д.) */
 .page-heading h1 {
   font-size: clamp(1.8rem, 3vw, 2.3rem);
   margin-bottom: 0.3rem;
@@ -192,6 +200,7 @@ img {
   margin-top: 0;
 }
 
+/* Список подстраниц в разделах */
 .articles-list a {
   color: var(--accent-strong);
   text-decoration: underline;
@@ -205,6 +214,7 @@ img {
   text-decoration-thickness: 2px;
 }
 
+/* Ссылки внутри текста страниц */
 .content-block a {
   color: var(--accent-strong);
   text-decoration: underline;
@@ -218,6 +228,7 @@ img {
   text-decoration-thickness: 2px;
 }
 
+/* Подвал */
 .site-footer {
   border-top: 1px solid rgba(135, 109, 87, 0.12);
   padding: 0.45rem 0 0.55rem;
@@ -240,7 +251,7 @@ img {
     display: block;
   }
 
-  .hero-image {
+  .banner-image {
     height: 200px;
   }
 
