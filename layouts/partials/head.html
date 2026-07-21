@@ -4,3 +4,5 @@
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 {{ $css := resources.Get "main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{/* Сохраняем копию по постоянному адресу /main.css для Decap CMS */}}
+{{ $adminCss := $rawCss | resources.Copy "main.css" | minify }}
