@@ -7,38 +7,5 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.14.1/dist/decap-cms.js"></script>
-  <!-- Скрипт для подмены путей к картинкам в предпросмотре -->
-  <script>
-    const GITHUB_RAW = "https://raw.githubusercontent.com/eeleenaa21/gestalt.bartosh.org/master/assets/images";
-
-    // Функция подмены путей
-    function fixImages(doc) {
-      const imgs = doc.querySelectorAll('img');
-      imgs.forEach(img => {
-        const src = img.getAttribute('src');
-        // Перехватываем всё, что ссылается на /images/ или images/
-        if (src && (src.startsWith('/images/') || src.startsWith('images/')) && !src.includes('githubusercontent')) {
-          const fileName = src.split('/').pop();
-          img.src = `${GITHUB_RAW}/${fileName}`;
-        }
-      });
-    }
-
-    // Слушатель событий: как только iframe предпросмотра загрузился, ставим наблюдатель
-    setInterval(() => {
-      const iframe = document.querySelector('iframe');
-      if (iframe && iframe.contentDocument) {
-        // Подправляем уже существующие картинки
-        fixImages(iframe.contentDocument);
-
-        // Наблюдаем за появлением новых картинок при печати текста
-        if (!iframe.dataset.observed) {
-          iframe.dataset.observed = "true";
-          const observer = new MutationObserver(() => fixImages(iframe.contentDocument));
-          observer.observe(iframe.contentDocument.body, { childList: true, subtree: true });
-        }
-      }
-    }, 500);
-  </script>
 </body>
 </html>

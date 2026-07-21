@@ -7,7 +7,7 @@ backend:
   # Когда OAuth proxy будет запущен локально для теста:
   # base_url: http://127.0.0.1:8080
 
-media_folder: "assets/images"
+media_folder: "static/images"
 public_folder: "/images"
 relative_path: true
 
