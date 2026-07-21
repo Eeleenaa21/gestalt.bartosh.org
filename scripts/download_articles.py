@@ -8,20 +8,50 @@ import sys
 import urllib.parse
 
 ARTICLES = [
+    # 1
     ("chto-takoe-gestalt-terapiya", "Что такое гештальт-терапия?", "/статьи/что-такое-гештальт-терапия/"),
+    # 2
     ("ono-nastupit", "Оно наступит", "/статьи/оно-наступит/"),
+    # 3
+    ("kotiki", "Котики", "/статьи/котики/"),
+    # 4
     ("ya-ostrov", "Я — остров", "/статьи/я-остров/"),
+    # 5
+    ("takzhe-chelovek", "Тоже человек", "/статьи/тоже-человек/"),
+    # 6
     ("v-komnate-moej", "В комнате моей", "/статьи/в-комнате-моей/"),
+    # 7
     ("o-travme", "О травме", "/статьи/о-травме/"),
+    # 8
     ("prikazano-vyzhit", "Приказано выжить. Письмо счастья родителям подростков", "/статьи/приказано-выжить-письмо-счастья-родителям-подростков/"),
+    # 9
     ("depressiya-glazami-psihologa", "Депрессия глазами психолога", "/статьи/депрессия-глазами-психолога/"),
+    # 10
     ("depressiya-glazami-psihologa-2-chto-delat", "Депрессия глазами психолога-2. Что делать", "/статьи/депрессия-глазами-психолога-2-что-делать/"),
+    # 11
     ("materinstvo", "Материнство (О чём не пишут в глянцевых журналах)", "/статьи/материнство-о-чём-не-пишут-в-глянцевых-журналах/"),
+    # 12
     ("najti-soobshchnika", "Найти сообщника", "/статьи/найти-сообщника/"),
+    # 13
     ("pogovorit", "Поговорить", "/статьи/поговорить/"),
+    # 14
     ("ne-uhodi", "Не уходи", "/статьи/не-уходи/"),
+    # 15
     ("ya-budu-prodolzhat", "Я буду продолжать", "/статьи/я-буду-продолжать/"),
+    # 16
     ("ya-boyus-letat", "Я боюсь летать!", "/статьи/я-боюсь-летать/"),
+    # 17
+    ("propisnye-istiny-pamyatka-klientu", "Прописные истины. Памятка клиенту", "/статьи/прописные-истины-памятка-клиенту/"),
+    # 18
+    ("igryaushchiy-terapevt", "Играющий терапевт", "/статьи/играющий-терапевт/"),
+    # 19
+    ("bes", "Бессилие", "/статьи/бессилие/"),
+    # 20
+    ("inozemcy", "Иноземцы", "/статьи/иноземцы/"),
+    # 21
+    ("ya-zdes-manifest", "Я здесь. Манифест", "/статьи/я-здесь-манифест/"),
+    # 22
+    ("sinye-s-mjagkim-ili-kiki-i-buba", "Синее с мягким, или Кики и Буба", "/статьи/синее-с-мягким-или-кики-и-буба/"),
 ]
 
 BASE_URL = "https://gestalt.bartosh.org"
@@ -85,9 +115,10 @@ def main():
     output_dir = "content/stati"
     os.makedirs(output_dir, exist_ok=True)
 
-    for slug, title, url_path in ARTICLES:
+    for i, (slug, title, url_path) in enumerate(ARTICLES, 1):
         print(f"Downloading: {title}")
         print(f"  URL: {url_path}")
+        print(f"  Weight: {i}")
 
         html = download_article(url_path)
         if not html:
@@ -112,6 +143,7 @@ def main():
             f.write("---\n")
             f.write(f'title: "{title}"\n')
             f.write(f'url: "{url_path}"\n')
+            f.write(f'weight: {i}\n')
             f.write("draft: false\n")
             f.write("---\n\n")
             f.write(text)
