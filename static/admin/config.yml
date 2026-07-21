@@ -1,0 +1,206 @@
+backend:
+  name: github
+  repo: Eeleenaa21/gestalt.bartosh.org
+  branch: master
+  base_url: https://gestalt-cms-auth.onrender.com
+  auth_endpoint: /api/auth
+  # Когда OAuth proxy будет запущен локально для теста:
+  # base_url: http://127.0.0.1:8080
+
+media_folder: "static/images"
+public_folder: "/images"
+
+site_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
+display_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
+logo_url: /images/photo.png
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    label_singular: "Страница"
+    description: "Основные страницы сайта"
+    files:
+      - name: "home"
+        label: "Главная"
+        file: "content/_index.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "hidden", default: "Главная" }
+          - { label: "Описание (meta)", name: "description", widget: "string", required: false }
+          - label: "Меню"
+            name: "menu"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Основное меню"
+                name: "main"
+                widget: "object"
+                fields:
+                  - { label: "Название", name: "name", widget: "string", default: "Главная" }
+                  - { label: "Вес сортировки", name: "weight", widget: "number", default: 1 }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+      - name: "about"
+        label: "Обо мне"
+        file: "content/about.md"
+        fields:
+          - { label: "URL", name: "url", widget: "hidden", default: "/obo-mne/" }
+          - label: "Меню"
+            name: "menu"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Основное меню"
+                name: "main"
+                widget: "object"
+                fields:
+                  - { label: "Название", name: "name", widget: "string", default: "Обо мне" }
+                  - { label: "Вес сортировки", name: "weight", widget: "number", default: 2 }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+      - name: "rasskaziki"
+        label: "Рассказики"
+        file: "content/rasskaziki.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "hidden", default: "Рассказики" }
+          - { label: "URL", name: "url", widget: "hidden", default: "/rasskaziki/" }
+          - label: "Меню"
+            name: "menu"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Основное меню"
+                name: "main"
+                widget: "object"
+                fields:
+                  - { label: "Название", name: "name", widget: "string", default: "Рассказики" }
+                  - { label: "Вес сортировки", name: "weight", widget: "number", default: 6 }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "stati"
+    label: "Статьи"
+    label_singular: "Статья"
+    description: "Раздел статей"
+    folder: "content/stati"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    filter: { field: "title", value: "Бессилие" }
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - label: "URL"
+        name: "url"
+        widget: "string"
+        pattern: ["^/stati/[a-z0-9-]+/$", "Должен быть вида /stati/nazvanie/"]
+      - { label: "Вес сортировки", name: "weight", widget: "number", default: 10, required: false }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "stati_index"
+    label: "Статьи — страница раздела"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "stati_index"
+        label: "Раздел «Статьи»"
+        file: "content/stati/_index.md"
+        fields:
+          - { label: "URL", name: "url", widget: "hidden", default: "/stati/" }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "sluchai"
+    label: "Случаи из практики"
+    label_singular: "Случай"
+    description: "Терапевтические случаи"
+    folder: "content/sluchai"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    filter: { field: "title", value: "Бегемототерапия" }
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - label: "URL"
+        name: "url"
+        widget: "string"
+        pattern: ["^/sluchai-iz-praktiki/[a-z0-9-]+/$", "Должен быть вида /sluchai-iz-praktiki/nazvanie/"]
+      - { label: "Вес сортировки", name: "weight", widget: "number", default: 10, required: false }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "sluchai_index"
+    label: "Случаи из практики — страница раздела"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "sluchai_index"
+        label: "Раздел «Случаи из практики»"
+        file: "content/sluchai/_index.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "hidden", default: "Случаи из практики" }
+          - { label: "URL", name: "url", widget: "hidden", default: "/sluchai-iz-praktiki/" }
+          - { label: "Описание (meta)", name: "description", widget: "string", required: false }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "voprosy"
+    label: "Вопросы и ответы"
+    label_singular: "Вопрос"
+    description: "Вопросы читателей"
+    folder: "content/voprosy"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    filter: { field: "title", value: "У меня есть всё для счастья" }
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - label: "URL"
+        name: "url"
+        widget: "string"
+        pattern: ["^/voprosy-i-otvety/[a-z0-9-]+/$", "Должен быть вида /voprosy-i-otvety/nazvanie/"]
+      - { label: "Категория", name: "category", widget: "string", required: false }
+      - { label: "Вес сортировки", name: "weight", widget: "number", default: 10, required: false }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "voprosy_index"
+    label: "Вопросы и ответы — страница раздела"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "voprosy_index"
+        label: "Раздел «Вопросы и ответы»"
+        file: "content/voprosy/_index.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "hidden", default: "Вопросы и ответы" }
+          - { label: "URL", name: "url", widget: "hidden", default: "/voprosy-i-otvety/" }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "chitatelskiy-dnevnik"
+    label: "Читательский дневник"
+    label_singular: "Запись"
+    description: "Заметки о книгах"
+    folder: "content/chitatelskiy-dnevnik"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    filter: { field: "title", value: "2014" }
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - label: "URL"
+        name: "url"
+        widget: "string"
+        pattern: ["^/chitatelskiy-dnevnik/[a-z0-9-]+/$", "Должен быть вида /chitatelskiy-dnevnik/nazvanie/"]
+      - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "chitatelskiy-dnevnik_index"
+    label: "Читательский дневник — страница раздела"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "chitatelskiy-dnevnik_index"
+        label: "Раздел «Читательский дневник»"
+        file: "content/chitatelskiy-dnevnik/_index.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "hidden", default: "Читательский дневник" }
+          - { label: "URL", name: "url", widget: "hidden", default: "/chitatelskiy-dnevnik/" }
+          - { label: "Описание (meta)", name: "description", widget: "string", required: false }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
