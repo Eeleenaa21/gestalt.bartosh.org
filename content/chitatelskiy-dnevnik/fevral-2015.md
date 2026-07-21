@@ -1,6 +1,6 @@
 ---
 title: "Февраль 2015"
-url: "/читательский-дневник/февраль-2015/"
+url: "/chitatelskiy-dnevnik/fevral-2015/"
 draft: false
 ---
 

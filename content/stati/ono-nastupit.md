@@ -1,6 +1,6 @@
 ---
 title: "Оно наступит"
-url: "/статьи/оно-наступит/"
+url: "/stati/ono-nastupit/"
 weight: 2
 draft: false
 ---

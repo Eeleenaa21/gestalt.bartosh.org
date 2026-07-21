@@ -1,6 +1,6 @@
 ---
 title: "Депрессия глазами психолога"
-url: "/статьи/депрессия-глазами-психолога/"
+url: "/stati/depressiya-glazami-psihologa/"
 weight: 9
 draft: false
 ---

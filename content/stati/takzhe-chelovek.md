@@ -1,6 +1,6 @@
 ---
 title: "Тоже человек"
-url: "/статьи/тоже-человек/"
+url: "/stati/takzhe-chelovek/"
 weight: 5
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Я не уважаю себя. Как это изменить?"
-url: "/вопросы-и-ответы/самооценка/35/"
+url: "/voprosy-i-otvety/samoocenka/35/"
 category: "самооценка"
 weight: 38
 draft: false

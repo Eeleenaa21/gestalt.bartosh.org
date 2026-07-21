@@ -1,5 +1,5 @@
 ---
-url: "/статьи/"
+url: "/stati/"
 draft: false
 menu:
   main:

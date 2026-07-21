@@ -1,6 +1,6 @@
 ---
 title: "Я не могу выйти из кризиса. Застряла"
-url: "/вопросы-и-ответы/кризисы-травмы-горе/41/"
+url: "/voprosy-i-otvety/krizisy-travmy-gore/41/"
 category: "кризисы-травмы-горе"
 weight: 20
 draft: false

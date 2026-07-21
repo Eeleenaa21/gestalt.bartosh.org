@@ -1,6 +1,6 @@
 ---
 title: "Вопросы и ответы"
-url: "/вопросы-и-ответы/"
+url: "/voprosy-i-otvety/"
 draft: false
 menu:
   main:

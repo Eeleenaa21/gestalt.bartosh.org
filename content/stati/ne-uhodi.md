@@ -1,6 +1,6 @@
 ---
 title: "Не уходи"
-url: "/статьи/не-уходи/"
+url: "/stati/ne-uhodi/"
 weight: 14
 draft: false
 ---

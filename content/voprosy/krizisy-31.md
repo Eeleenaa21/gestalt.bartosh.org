@@ -1,6 +1,6 @@
 ---
 title: "Я не могу пережить потерю. Мне очень плохо"
-url: "/вопросы-и-ответы/кризисы-травмы-горе/31/"
+url: "/voprosy-i-otvety/krizisy-travmy-gore/31/"
 category: "кризисы-травмы-горе"
 weight: 18
 draft: false

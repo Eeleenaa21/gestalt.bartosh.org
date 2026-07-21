@@ -1,6 +1,6 @@
 ---
 title: "Маркиза ангелов"
-url: "/случаи-из-практики/маркиза-ангелов/"
+url: "/sluchai-iz-praktiki/markiza-angelov/"
 draft: false
 weight: 9
 ---

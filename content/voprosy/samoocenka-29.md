@@ -1,6 +1,6 @@
 ---
 title: "Я не могу сказать нет. Я всегда соглашаюсь на всё"
-url: "/вопросы-и-ответы/самооценка/29/"
+url: "/voprosy-i-otvety/samoocenka/29/"
 category: "самооценка"
 weight: 36
 draft: false

@@ -1,5 +1,5 @@
 ---
-url: "/обо-мне/"
+url: "/obo-mne/"
 draft: false
 menu:
   main:

@@ -1,6 +1,6 @@
 ---
 title: "Синее с мягким, или Кики и Буба"
-url: "/статьи/синее-с-мягким-или-кики-и-буба/"
+url: "/stati/sinye-s-mjagkim-ili-kiki-i-buba/"
 weight: 22
 draft: false
 ---

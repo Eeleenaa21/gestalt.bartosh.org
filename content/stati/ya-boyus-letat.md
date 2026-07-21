@@ -1,6 +1,6 @@
 ---
 title: "Я боюсь летать!"
-url: "/статьи/я-боюсь-летать/"
+url: "/stati/ya-boyus-letat/"
 weight: 16
 draft: false
 ---

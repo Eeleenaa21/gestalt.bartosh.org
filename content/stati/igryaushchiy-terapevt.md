@@ -1,6 +1,6 @@
 ---
 title: "Играющий терапевт"
-url: "/статьи/играющий-терапевт/"
+url: "/stati/igryaushchiy-terapevt/"
 weight: 18
 draft: false
 ---

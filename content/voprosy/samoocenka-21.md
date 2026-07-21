@@ -1,6 +1,6 @@
 ---
 title: "Я не могу принять себя таким, какой я есть"
-url: "/вопросы-и-ответы/самооценка/21/"
+url: "/voprosy-i-otvety/samoocenka/21/"
 category: "самооценка"
 weight: 34
 draft: false

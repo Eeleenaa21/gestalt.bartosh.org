@@ -1,6 +1,6 @@
 ---
 title: "Бегемототерапия"
-url: "/случаи-из-практики/бегемототерапия/"
+url: "/sluchai-iz-praktiki/begemoterapiya/"
 draft: false
 weight: 4
 ---

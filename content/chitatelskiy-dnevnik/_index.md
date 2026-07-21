@@ -1,7 +1,7 @@
 ---
 title: "Читательский дневник"
 description: "Заметки о прочитанных книгах"
-url: "/читательский-дневник/"
+url: "/chitatelskiy-dnevnik/"
 draft: false
 menu:
   main:

@@ -1,6 +1,6 @@
 ---
 title: "Я буду продолжать"
-url: "/статьи/я-буду-продолжать/"
+url: "/stati/ya-budu-prodolzhat/"
 weight: 15
 draft: false
 ---

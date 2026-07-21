@@ -1,6 +1,6 @@
 ---
 title: "О травме"
-url: "/статьи/о-травме/"
+url: "/stati/o-travme/"
 weight: 7
 draft: false
 ---

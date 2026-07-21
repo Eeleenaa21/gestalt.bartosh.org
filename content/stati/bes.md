@@ -1,6 +1,6 @@
 ---
 title: "Бессилие"
-url: "/статьи/бессилие/"
+url: "/stati/bes/"
 weight: 19
 draft: false
 ---

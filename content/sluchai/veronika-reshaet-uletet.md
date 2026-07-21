@@ -1,6 +1,6 @@
 ---
 title: "Вероника решает улететь"
-url: "/случаи-из-практики/вероника-решает-улететь/"
+url: "/sluchai-iz-praktiki/veronika-reshaet-uletet/"
 draft: false
 weight: 10
 ---

@@ -7,7 +7,7 @@ import subprocess
 import urllib.parse
 
 BASE_URL = "https://gestalt.bartosh.org"
-URL_PATH = "/рассказики/"
+URL_PATH = "/rasskaziki/"
 
 def extract_text_from_html(html):
     """Extract text from the page."""
@@ -92,7 +92,7 @@ def main():
         f.write("---\n")
         f.write('title: "Рассказики"\n')
         f.write('description: "Короткие рассказы из жизни"\n')
-        f.write('url: "/рассказики/"\n')
+        f.write('url: "/rasskaziki/"\n')
         f.write("draft: false\n")
         f.write("---\n\n")
         f.write("![Елена Бартош](/images/photo.png)\n\n")

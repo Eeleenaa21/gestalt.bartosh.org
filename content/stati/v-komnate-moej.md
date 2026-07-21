@@ -1,6 +1,6 @@
 ---
 title: "В комнате моей"
-url: "/статьи/в-комнате-моей/"
+url: "/stati/v-komnate-moej/"
 weight: 6
 draft: false
 ---

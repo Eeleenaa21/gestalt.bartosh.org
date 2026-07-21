@@ -1,6 +1,6 @@
 ---
 title: "Рассказики"
-url: "/рассказики/"
+url: "/rasskaziki/"
 draft: false
 menu:
   main:

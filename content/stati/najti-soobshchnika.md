@@ -1,6 +1,6 @@
 ---
 title: "Найти сообщника"
-url: "/статьи/найти-сообщника/"
+url: "/stati/najti-soobshchnika/"
 weight: 12
 draft: false
 ---

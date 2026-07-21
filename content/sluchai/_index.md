@@ -1,6 +1,6 @@
 ---
 title: "Случаи из практики"
-url: "/случаи-из-практики/"
+url: "/sluchai-iz-praktiki/"
 description: "Терапевтические случаи с согласия клиентов"
 draft: false
 menu:

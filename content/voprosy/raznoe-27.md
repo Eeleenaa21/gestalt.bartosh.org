@@ -1,6 +1,6 @@
 ---
 title: "Я не знаю, как поступить. Ситуация безвыходная"
-url: "/вопросы-и-ответы/разное/27/"
+url: "/voprosy-i-otvety/raznoe/27/"
 category: "разное"
 weight: 31
 draft: false

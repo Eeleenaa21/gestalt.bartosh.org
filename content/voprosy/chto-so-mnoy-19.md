@@ -1,6 +1,6 @@
 ---
 title: "Я не знаю, как жить дальше. Всё потеряло смысл"
-url: "/вопросы-и-ответы/что-со-мной/19/"
+url: "/voprosy-i-otvety/chto-so-mnoj/19/"
 category: "что-со-мной"
 weight: 4
 draft: false

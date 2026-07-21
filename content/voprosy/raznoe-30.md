@@ -1,6 +1,6 @@
 ---
 title: "Я не могу принять решение. Зависла"
-url: "/вопросы-и-ответы/разное/30/"
+url: "/voprosy-i-otvety/raznoe/30/"
 category: "разное"
 weight: 32
 draft: false

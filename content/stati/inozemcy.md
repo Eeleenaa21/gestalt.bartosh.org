@@ -1,6 +1,6 @@
 ---
 title: "Иноземцы"
-url: "/статьи/иноземцы/"
+url: "/stati/inozemcy/"
 weight: 20
 draft: false
 ---

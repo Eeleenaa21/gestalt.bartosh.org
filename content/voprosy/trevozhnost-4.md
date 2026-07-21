@@ -1,6 +1,6 @@
 ---
 title: "У меня панические атаки. Я не знаю, что делать"
-url: "/вопросы-и-ответы/тревожность/4/"
+url: "/voprosy-i-otvety/trevozhnost/4/"
 category: "тревожность"
 weight: 41
 draft: false

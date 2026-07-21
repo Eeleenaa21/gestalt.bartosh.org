@@ -1,6 +1,6 @@
 ---
 title: "Котики"
-url: "/статьи/котики/"
+url: "/stati/kotiki/"
 weight: 3
 draft: false
 ---

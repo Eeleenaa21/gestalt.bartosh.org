@@ -1,6 +1,6 @@
 ---
 title: "Мы женаты третий год, но мне иногда кажется, что сто лет"
-url: "/вопросы-и-ответы/отношения/1/"
+url: "/voprosy-i-otvety/otnosheniya/1/"
 category: "отношения"
 weight: 22
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Я не могу справиться с тревогой. Она меня парализует"
-url: "/вопросы-и-ответы/что-со-мной/23/"
+url: "/voprosy-i-otvety/chto-so-mnoj/23/"
 category: "что-со-мной"
 weight: 6
 draft: false

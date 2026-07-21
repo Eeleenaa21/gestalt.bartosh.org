@@ -1,6 +1,6 @@
 ---
 title: "С другой стороны"
-url: "/случаи-из-практики/с-другой-стороны/"
+url: "/sluchai-iz-praktiki/s-drugoi-storony/"
 draft: false
 weight: 11
 ---

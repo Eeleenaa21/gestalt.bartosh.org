@@ -1,6 +1,6 @@
 ---
 title: "Я — остров"
-url: "/статьи/я-остров/"
+url: "/stati/ya-ostrov/"
 weight: 4
 draft: false
 ---

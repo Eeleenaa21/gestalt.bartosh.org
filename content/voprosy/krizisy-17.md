@@ -1,6 +1,6 @@
 ---
 title: "Я не могу справиться с горем. Меня никто не понимает"
-url: "/вопросы-и-ответы/кризисы-травмы-горе/17/"
+url: "/voprosy-i-otvety/krizisy-travmy-gore/17/"
 category: "кризисы-травмы-горе"
 weight: 16
 draft: false

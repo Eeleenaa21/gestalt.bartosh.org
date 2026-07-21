@@ -1,6 +1,6 @@
 ---
 title: "Я не люблю себя. У меня низкая самооценка"
-url: "/вопросы-и-ответы/самооценка/3/"
+url: "/voprosy-i-otvety/samoocenka/3/"
 category: "самооценка"
 weight: 37
 draft: false

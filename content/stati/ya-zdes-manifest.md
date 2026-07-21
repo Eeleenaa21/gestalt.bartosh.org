@@ -1,6 +1,6 @@
 ---
 title: "Я здесь. Манифест"
-url: "/статьи/я-здесь-манифест/"
+url: "/stati/ya-zdes-manifest/"
 weight: 21
 draft: false
 ---

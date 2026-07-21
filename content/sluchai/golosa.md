@@ -1,6 +1,6 @@
 ---
 title: "Голоса"
-url: "/случаи-из-практики/голоса/"
+url: "/sluchai-iz-praktiki/golosa/"
 draft: false
 weight: 8
 ---

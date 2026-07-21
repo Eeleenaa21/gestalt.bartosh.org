@@ -1,6 +1,6 @@
 ---
 title: "Прописные истины. Памятка клиенту"
-url: "/статьи/прописные-истины-памятка-клиенту/"
+url: "/stati/propisnye-istiny-pamyatka-klientu/"
 weight: 17
 draft: false
 ---

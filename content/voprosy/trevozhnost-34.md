@@ -1,6 +1,6 @@
 ---
 title: "Я постоянно тревожусь. Не могу расслабиться"
-url: "/вопросы-и-ответы/тревожность/34/"
+url: "/voprosy-i-otvety/trevozhnost/34/"
 category: "тревожность"
 weight: 40
 draft: false

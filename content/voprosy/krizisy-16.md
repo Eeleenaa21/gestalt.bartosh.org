@@ -1,6 +1,6 @@
 ---
 title: "Я пережила травму. Как мне жить дальше?"
-url: "/вопросы-и-ответы/кризисы-травмы-горе/16/"
+url: "/voprosy-i-otvety/krizisy-travmy-gore/16/"
 category: "кризисы-травмы-горе"
 weight: 15
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Что такое гештальт-терапия?"
-url: "/статьи/что-такое-гештальт-терапия/"
+url: "/stati/chto-takoe-gestalt-terapiya/"
 weight: 1
 draft: false
 ---

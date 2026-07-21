@@ -1,6 +1,6 @@
 ---
 title: "Не скажу"
-url: "/случаи-из-практики/не-скажу/"
+url: "/sluchai-iz-praktiki/ne-skazhu/"
 draft: false
 weight: 5
 ---

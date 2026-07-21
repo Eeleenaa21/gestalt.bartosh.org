@@ -1,6 +1,6 @@
 ---
 title: "Я не могу понять, что происходит. Всё запуталось"
-url: "/вопросы-и-ответы/разное/26/"
+url: "/voprosy-i-otvety/raznoe/26/"
 category: "разное"
 weight: 30
 draft: false

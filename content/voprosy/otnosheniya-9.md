@@ -1,6 +1,6 @@
 ---
 title: "Моя проблема в том, что я никак не могу найти свою половинку"
-url: "/вопросы-и-ответы/отношения/9/"
+url: "/voprosy-i-otvety/otnosheniya/9/"
 category: "отношения"
 weight: 29
 draft: false

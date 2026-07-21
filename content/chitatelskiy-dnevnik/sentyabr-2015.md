@@ -1,6 +1,6 @@
 ---
 title: "Сентябрь 2015"
-url: "/читательский-дневник/сентябрь-2015/"
+url: "/chitatelskiy-dnevnik/sentyabr-2015/"
 draft: false
 ---
 

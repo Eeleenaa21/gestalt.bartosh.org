@@ -1,6 +1,6 @@
 ---
 title: "Я пережила кризис. Как мне восстановиться?"
-url: "/вопросы-и-ответы/кризисы-травмы-горе/25/"
+url: "/voprosy-i-otvety/krizisy-travmy-gore/25/"
 category: "кризисы-травмы-горе"
 weight: 17
 draft: false

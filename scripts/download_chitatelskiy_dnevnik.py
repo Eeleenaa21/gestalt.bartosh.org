@@ -83,7 +83,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     for slug, title in SUB_PAGES:
-        url_path = f"/читательский-дневник/{slug}/"
+        url_path = f"/chitatelskiy-dnevnik/{slug}/"
         filename = f"{slug}.md"
         filepath = os.path.join(output_dir, filename)
 
@@ -107,7 +107,7 @@ def main():
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write("---\n")
             f.write(f'title: "{title}"\n')
-            f.write(f'url: "/читательский-дневник/{slug}/"\n')
+            f.write(f'url: "/chitatelskiy-dnevnik/{slug}/"\n')
             f.write("draft: false\n")
             f.write("---\n\n")
             f.write(text)

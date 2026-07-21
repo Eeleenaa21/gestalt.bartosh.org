@@ -1,6 +1,6 @@
 ---
 title: "Я тебя прощаю"
-url: "/случаи-из-практики/я-тебя-прощаю/"
+url: "/sluchai-iz-praktiki/ya-tebya-proshchayu/"
 draft: false
 weight: 1
 ---

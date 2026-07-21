@@ -1,6 +1,6 @@
 ---
 title: "Поговорить"
-url: "/статьи/поговорить/"
+url: "/stati/pogovorit/"
 weight: 13
 draft: false
 ---

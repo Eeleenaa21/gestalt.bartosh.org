@@ -1,6 +1,6 @@
 ---
 title: "Ничего особенного"
-url: "/случаи-из-практики/ничего-особенного/"
+url: "/sluchai-iz-praktiki/nichego-osobennogo/"
 draft: false
 weight: 7
 ---

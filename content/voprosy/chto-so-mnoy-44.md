@@ -1,6 +1,6 @@
 ---
 title: "Я не могу найти себя. Кто я? Что я хочу?"
-url: "/вопросы-и-ответы/что-со-мной/44/"
+url: "/voprosy-i-otvety/chto-so-mnoj/44/"
 category: "что-со-мной"
 weight: 8
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Камешки в океан"
-url: "/случаи-из-практики/камешки-в-океан/"
+url: "/sluchai-iz-praktiki/kameshki-v-okean/"
 draft: false
 weight: 2
 ---

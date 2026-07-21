@@ -1,6 +1,6 @@
 ---
 title: "Мальчик"
-url: "/случаи-из-практики/мальчик/"
+url: "/sluchai-iz-praktiki/malchik/"
 draft: false
 weight: 3
 ---
