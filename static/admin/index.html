@@ -8,7 +8,17 @@
 <body>
   <script src="https://unpkg.com/decap-cms@^3.14.1/dist/decap-cms.js"></script>
   <script>
-    CMS.registerPreviewStyle('/main.css');
+    fetch('/')
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const cssLink = doc.querySelector('link[rel="stylesheet"]');
+        if (cssLink && cssLink.getAttribute('href')) {
+          CMS.registerPreviewStyle(cssLink.getAttribute('href'));
+        }
+      })
+      .catch(err => console.error('Не удалось загрузить стили для превью Decap CMS:', err));
   </script>
 </body>
 </html>
