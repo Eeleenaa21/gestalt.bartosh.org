@@ -2,7 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-{{ $css := resources.Get "main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
-{{/* Сохраняем копию по постоянному адресу /main.css для Decap CMS */}}
+
+{{ $rawCss := resources.Get "main.css" }}
+{{ $css := $rawCss | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+// This is a raw copy for the Decap CMS preview
 {{ $adminCss := $rawCss | resources.Copy "main.css" | minify }}
