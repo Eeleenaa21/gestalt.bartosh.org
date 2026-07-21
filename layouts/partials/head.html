@@ -4,7 +4,8 @@
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
 {{ $rawCss := resources.Get "main.css" }}
+{{/* Publish raw copy for Decap CMS */}}
+{{ $dummy := ($rawCss | resources.Copy "main.css" | minify).Publish }}
+
 {{ $css := $rawCss | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-// This is a raw copy for the Decap CMS preview
-{{ $adminCss := $rawCss | resources.Copy "main.css" | minify }}
