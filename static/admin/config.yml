@@ -12,7 +12,7 @@ public_folder: "/images"
 relative_path: true
 
 site_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
-display_url: https://eeleenaa21.github.io/gestalt.bartosh.org/master/assets/images
+display_url: https://raw.githubusercontent.com/eeleenaa21/gestalt.bartosh.org/master/assets/images
 logo_url: /images/photo.png
 
 collections:
