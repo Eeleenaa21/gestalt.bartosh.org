@@ -1,4 +1,4 @@
-baseURL: "https://test.bartosh.org/"
+baseURL = "https://test.bartosh.org/"
 title = "Елена Бартош | Гештальт-терапевт"
 summarylength = 15
 enableEmoji = true
