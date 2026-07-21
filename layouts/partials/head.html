@@ -3,9 +3,7 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-{{ $rawCss := resources.Get "main.css" }}
-{{/* Publish raw copy for Decap CMS */}}
-{{ $dummy := ($rawCss | resources.Copy "main.css" | minify).Publish }}
 
-{{ $css := $rawCss | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+// NOTE: raw copy is for Decap CMS
+{{ $css := resources.Get "main.css" | minify | resources.Copy "main.css" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
