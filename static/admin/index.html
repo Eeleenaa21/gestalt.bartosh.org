@@ -9,47 +9,36 @@
   <script src="https://unpkg.com/decap-cms@^3.14.1/dist/decap-cms.js"></script>
   <!-- Скрипт для подмены путей к картинкам в предпросмотре -->
   <script>
-    const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/eeleenaa21/gestalt.bartosh.org/master/assets/images";
+    const GITHUB_RAW = "https://raw.githubusercontent.com/eeleenaa21/gestalt.bartosh.org/master/assets/images";
 
-    // Универсальный компонент предпросмотра
-    const CustomPreview = createClass({
-      componentDidMount: function() {
-        this.fixImageSrcs();
-      },
-      componentDidUpdate: function() {
-        this.fixImageSrcs();
-      },
-      fixImageSrcs: function() {
-        const iframe = document.querySelector('iframe');
-        if (!iframe || !iframe.contentDocument) return;
+    // Функция подмены путей
+    function fixImages(doc) {
+      const imgs = doc.querySelectorAll('img');
+      imgs.forEach(img => {
+        const src = img.getAttribute('src');
+        // Перехватываем всё, что ссылается на /images/ или images/
+        if (src && (src.startsWith('/images/') || src.startsWith('images/')) && !src.includes('githubusercontent')) {
+          const fileName = src.split('/').pop();
+          img.src = `${GITHUB_RAW}/${fileName}`;
+        }
+      });
+    }
 
-        const imgs = iframe.contentDocument.querySelectorAll('img');
-        imgs.forEach(img => {
-          const src = img.getAttribute('src');
-          if (src && (src.startsWith('/images/') || src.startsWith('images/'))) {
-            const fileName = src.split('/').pop();
-            img.src = `${GITHUB_RAW_BASE}/${fileName}`;
-          }
-        });
-      },
-      render: function() {
-        const title = this.props.entry.getIn(['data', 'title']) || 'Предпросмотр';
-        return h('div', { style: { padding: '20px' } },
-          h('h1', {}, title),
-          h('div', {}, this.props.widgetFor('body'))
-        );
+    // Слушатель событий: как только iframe предпросмотра загрузился, ставим наблюдатель
+    setInterval(() => {
+      const iframe = document.querySelector('iframe');
+      if (iframe && iframe.contentDocument) {
+        // Подправляем уже существующие картинки
+        fixImages(iframe.contentDocument);
+
+        // Наблюдаем за появлением новых картинок при печати текста
+        if (!iframe.dataset.observed) {
+          iframe.dataset.observed = "true";
+          const observer = new MutationObserver(() => fixImages(iframe.contentDocument));
+          observer.observe(iframe.contentDocument.body, { childList: true, subtree: true });
+        }
       }
-    });
-
-    // 1. Регистрируем для всех коллекций из папок (stati, voprosy, sluchai, chitatelskiy_dnevnik)
-    ['stati', 'voprosy', 'sluchai', 'chitatelskiy_dnevnik', 'single_pages'].forEach(name => {
-      CMS.registerPreviewTemplate(name, CustomPreview);
-    });
-
-    // 2. Регистрируем индивидуально для отдельных файлов (about.md, _index.md и т.д.)
-    ['index', 'about', 'rasskaziki'].forEach(fileName => {
-      CMS.registerPreviewTemplate(fileName, CustomPreview);
-    });
+    }, 500);
   </script>
 </body>
 </html>
