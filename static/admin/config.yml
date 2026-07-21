@@ -7,7 +7,7 @@ backend:
   # Когда OAuth proxy будет запущен локально для теста:
   # base_url: http://127.0.0.1:8080
 
-media_folder: "static/images"
+media_folder: "assets/images"
 public_folder: "/images"
 
 site_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
