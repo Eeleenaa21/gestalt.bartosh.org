@@ -9,6 +9,7 @@ backend:
 
 media_folder: "assets/images"
 public_folder: "/images"
+relative_path: true
 
 site_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
 display_url: https://eeleenaa21.github.io/gestalt.bartosh.org/
