@@ -34,7 +34,9 @@ img {
 }
 
 /* Фото Елены на главной странице — обтекание справа */
-.intro img[src$="photo.png"] {
+.intro img[src$="photo.png"],
+.pane-preview img[src$="photo.png"],
+img[src$="photo.png"] {
   width: 200px;
   max-width: 40%;
   float: right;
@@ -43,8 +45,20 @@ img {
   box-shadow: 0 10px 24px rgba(47, 59, 70, 0.12);
 }
 
-/* Блок с адресом кабинета на главной — под фото, тоже справа */
-.intro p:has(img[src$="photo.png"]) + blockquote {
+/* Фото Елены на страницах "Обо мне", "Статьи" и т.д. */
+.single-page img[src$="photo.png"],
+body img[src$="photo.png"] {
+  float: right;
+  width: 240px;
+  max-width: 45%;
+  margin: 0.3rem 0 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(47, 59, 70, 0.12);
+}
+
+/* Блок с адресом кабинета — под фото, тоже справа */
+.intro p:has(img[src$="photo.png"]) + blockquote,
+p:has(img[src$="photo.png"]) + blockquote {
   float: right;
   clear: right;
   width: 200px;
@@ -58,16 +72,6 @@ img {
 
 .intro p:has(img[src$="photo.png"]) + blockquote p {
   margin: 0 0 0.3rem;
-}
-
-/* Фото Елены на страницах "Обо мне", "Статьи" и т.д. */
-.single-page img[src$="photo.png"] {
-  float: right;
-  width: 240px;
-  max-width: 45%;
-  margin: 0.3rem 0 1rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 10px 24px rgba(47, 59, 70, 0.12);
 }
 
 @media (max-width: 700px) {
