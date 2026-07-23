@@ -89,8 +89,7 @@ collections:
     folder: "content/stati"
     create: true
     slug: "{{slug}}"
-    # Исключаем _index.md из списка статей
-    filter: { field: "is_index", rule: "noneof", value: [true] }
+    filter: {field: "slug", pattern: "!_index"}
     fields:
       - { label: "Заголовок статьи", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
