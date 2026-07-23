@@ -1,7 +1,6 @@
 ---
 title: "Приказано выжить. Письмо счастья родителям подростков"
 url: "/stati/prikazano-vyzhit/"
-weight: 8
 draft: false
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Я — остров"
 url: "/stati/ya-ostrov/"
-weight: 4
 draft: false
 ---
 

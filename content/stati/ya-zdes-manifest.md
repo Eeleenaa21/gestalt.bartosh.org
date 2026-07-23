@@ -1,7 +1,6 @@
 ---
 title: "Я здесь. Манифест"
 url: "/stati/ya-zdes-manifest/"
-weight: 21
 draft: false
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "О травме"
 url: "/stati/o-travme/"
-weight: 7
 draft: false
 ---
 

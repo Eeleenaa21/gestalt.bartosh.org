@@ -1,7 +1,6 @@
 ---
 title: "Поговорить"
 url: "/stati/pogovorit/"
-weight: 13
 draft: false
 ---
 

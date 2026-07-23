@@ -1,7 +1,6 @@
 ---
 title: "Оно наступит"
 url: "/stati/ono-nastupit/"
-weight: 2
 draft: false
 ---
 

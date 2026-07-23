@@ -1,7 +1,6 @@
 ---
 title: "Материнство (О чём не пишут в глянцевых журналах)"
 url: "/stati/materinstvo/"
-weight: 11
 draft: false
 ---
 

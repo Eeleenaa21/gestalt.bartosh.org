@@ -1,7 +1,6 @@
 ---
 title: "Тоже человек"
 url: "/stati/takzhe-chelovek/"
-weight: 5
 draft: false
 ---
 
