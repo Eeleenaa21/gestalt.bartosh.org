@@ -2,7 +2,6 @@
 title: "Статьи"
 url: "/stati/"
 draft: false
-slug: "_index"
 menu:
   main:
     name: "Статьи"
