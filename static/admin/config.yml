@@ -84,7 +84,6 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    filter: { field: "title", value: "Бессилие" }
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - label: "URL"
@@ -115,7 +114,6 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    filter: { field: "title", value: "Бегемототерапия" }
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - label: "URL"
@@ -148,7 +146,6 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    filter: { field: "title", value: "У меня есть всё для счастья" }
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - label: "URL"
@@ -181,7 +178,6 @@ collections:
     create: true
     delete: true
     slug: "{{slug}}"
-    filter: { field: "title", value: "2014" }
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - label: "URL"
