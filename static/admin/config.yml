@@ -89,7 +89,7 @@ collections:
     folder: "content/stati"
     create: true
     slug: "{{slug}}"
-    filter: {field: "slug", pattern: "!_index"}
+    filter: {field: "slug", pattern: "/^(?!_index$).*$/"}
     fields:
       - { label: "Заголовок статьи", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
