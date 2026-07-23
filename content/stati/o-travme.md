@@ -1,6 +1,7 @@
 ---
 title: "О травме"
 url: "/stati/o-travme/"
+type: "post"
 draft: false
 ---
 

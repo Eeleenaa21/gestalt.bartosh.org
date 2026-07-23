@@ -1,6 +1,7 @@
 ---
 title: "Синее с мягким, или Кики и Буба"
 url: "/stati/sinye-s-mjagkim-ili-kiki-i-buba/"
+type: "post"
 draft: false
 ---
 

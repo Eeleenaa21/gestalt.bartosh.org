@@ -1,6 +1,7 @@
 ---
 title: "Иноземцы"
 url: "/stati/inozemcy/"
+type: "post"
 draft: false
 ---
 

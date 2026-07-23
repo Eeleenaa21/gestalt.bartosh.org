@@ -1,6 +1,7 @@
 ---
 title: "Не уходи"
 url: "/stati/ne-uhodi/"
+type: "post"
 draft: false
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Я здесь. Манифест"
 url: "/stati/ya-zdes-manifest/"
+type: "post"
 draft: false
 ---
 

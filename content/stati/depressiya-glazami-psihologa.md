@@ -1,6 +1,7 @@
 ---
 title: "Депрессия глазами психолога"
 url: "/stati/depressiya-glazami-psihologa/"
+type: "post"
 draft: false
 ---
 

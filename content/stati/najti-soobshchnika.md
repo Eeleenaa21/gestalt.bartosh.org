@@ -1,6 +1,7 @@
 ---
 title: "Найти сообщника"
 url: "/stati/najti-soobshchnika/"
+type: "post"
 draft: false
 ---
 

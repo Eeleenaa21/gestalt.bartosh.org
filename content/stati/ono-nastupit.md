@@ -1,6 +1,7 @@
 ---
 title: "Оно наступит"
 url: "/stati/ono-nastupit/"
+type: "post"
 draft: false
 ---
 

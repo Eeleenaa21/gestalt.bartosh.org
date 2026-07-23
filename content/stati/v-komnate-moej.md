@@ -1,6 +1,7 @@
 ---
 title: "В комнате моей"
 url: "/stati/v-komnate-moej/"
+type: "post"
 draft: false
 ---
 

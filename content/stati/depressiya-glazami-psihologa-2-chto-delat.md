@@ -1,6 +1,7 @@
 ---
 title: "Депрессия глазами психолога-2. Что делать"
 url: "/stati/depressiya-glazami-psihologa-2-chto-delat/"
+type: "post"
 draft: false
 ---
 

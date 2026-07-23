@@ -1,6 +1,6 @@
 ---
 title: Бессилие
-url: /stati/bes/
+url: /stati/bessilie/
 type: "post"
 draft: false
 ---

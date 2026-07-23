@@ -1,6 +1,7 @@
 ---
 title: "Я буду продолжать"
 url: "/stati/ya-budu-prodolzhat/"
+type: "post"
 draft: false
 ---
 

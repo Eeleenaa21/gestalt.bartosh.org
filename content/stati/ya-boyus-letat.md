@@ -1,6 +1,7 @@
 ---
 title: "Я боюсь летать!"
 url: "/stati/ya-boyus-letat/"
+type: "post"
 draft: false
 ---
 

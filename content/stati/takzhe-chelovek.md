@@ -1,6 +1,7 @@
 ---
 title: "Тоже человек"
 url: "/stati/takzhe-chelovek/"
+type: "post"
 draft: false
 ---
 

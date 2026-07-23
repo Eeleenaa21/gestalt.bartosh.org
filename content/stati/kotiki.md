@@ -1,6 +1,7 @@
 ---
 title: "Котики"
 url: "/stati/kotiki/"
+type: "post"
 draft: false
 ---
 
