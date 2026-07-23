@@ -13,6 +13,8 @@ keywords = ["гештальт-терапевт", "консультант", "Хе
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
     [markup.goldmark.renderHooks]
       [markup.goldmark.renderHooks.image]
         useEmbedded = "fallback"
