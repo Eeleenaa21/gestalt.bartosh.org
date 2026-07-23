@@ -85,12 +85,12 @@ collections:
           - { label: "Содержимое (текст над списком)", name: "body", widget: "markdown" }
 
   - name: "stati"
-    label: "Публикации статей"
+    label: "Статьи"
     folder: "content/stati"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    # Исключаем _index.md из списка обычных статей, чтобы редактор случайно его не удалил
-    filter: { field: "is_index", value: false }
+    slug: "{{slug}}"
+    # Исключаем _index.md из списка статей
+    filter: { field: "menu", rule: "pattern", value: "^$" }
     fields:
       - { label: "Заголовок статьи", name: "title", widget: "string" }
       - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
