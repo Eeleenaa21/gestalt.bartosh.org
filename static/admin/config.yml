@@ -89,9 +89,9 @@ collections:
     folder: "content/stati"
     create: true
     slug: "{{slug}}"
-    filter: {field: "path", pattern: "/^(?!.*_index\\.md$).*$/"}
+    filter: { field: "type", value: "post" }
     fields:
       - { label: "Заголовок статьи", name: "title", widget: "string" }
-      - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { { name: "type", widget: "hidden", default: "post" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Содержимое статьи", name: "body", widget: "markdown" }

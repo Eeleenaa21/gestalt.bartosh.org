@@ -1,6 +1,7 @@
 ---
 title: "Статьи"
 url: "/stati/"
+type: "index"
 draft: false
 menu:
   main:
