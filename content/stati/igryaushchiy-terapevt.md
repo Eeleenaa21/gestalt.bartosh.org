@@ -1,7 +1,6 @@
 ---
 title: "Играющий терапевт"
 url: "/stati/igryaushchiy-terapevt/"
-weight: 18
 draft: false
 ---
 

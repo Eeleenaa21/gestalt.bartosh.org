@@ -1,7 +1,6 @@
 ---
 title: "Иноземцы"
 url: "/stati/inozemcy/"
-weight: 20
 draft: false
 ---
 
