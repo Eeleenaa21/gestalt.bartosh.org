@@ -76,6 +76,16 @@ collections:
                   - { label: "Вес сортировки", name: "weight", widget: "number", default: 6 }
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
+  - name: "stati_index"
+    label: "Статьи — главная"
+    delete: false
+    files:
+      - name: "stati_index"
+        label: "Раздел «Статьи»"
+        file: "content/stati/_index.md"
+        fields:
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
   - name: "stati"
     label: "Статьи"
     label_singular: "Статья"
@@ -92,19 +102,6 @@ collections:
         pattern: ["^/stati/[a-z0-9-]+/$", "Должен быть вида /stati/nazvanie/"]
       - { label: "Вес сортировки", name: "weight", widget: "number", default: 10, required: false }
       - { label: "Содержимое", name: "body", widget: "markdown" }
-
-  - name: "stati_index"
-    label: "Статьи — страница раздела"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "stati_index"
-        label: "Раздел «Статьи»"
-        file: "content/stati/_index.md"
-        fields:
-          - { label: "URL", name: "url", widget: "hidden", default: "/stati/" }
-          - { label: "Содержимое", name: "body", widget: "markdown" }
 
   - name: "sluchai"
     label: "Случаи из практики"
