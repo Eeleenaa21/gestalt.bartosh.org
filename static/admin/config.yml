@@ -12,30 +12,87 @@ site_url: https://test.bartosh.org/
 logo_url: /images/photo.png
 
 collections:
-  - name: "home"
-    label: "Главная страница"
+  # -------------------------------------------------------------
+  # 1. Все ключевые страницы сайта (с настройками меню)
+  # -------------------------------------------------------------
+  - name: "pages"
+    label: "Страницы"
     files:
+      # --- Главная ---
       - file: "content/_index.md"
         label: "Главная страница"
-        name: "home_file"
+        name: "home"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Главная" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 1, value_type: "int" }
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
-  - name: "about"
-    label: "Страница «Обо мне»"
-    files:
+      # --- Обо мне ---
       - file: "content/obo-mne/_index.md"
         label: "Страница «Обо мне»"
-        name: "about_file"
+        name: "about"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/obo-mne/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Обо мне" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 2, value_type: "int" }
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
+      # --- Главная страница раздела «Статьи» (_index.md) ---
+      - file: "content/stati/_index.md"
+        label: "Раздел «Статьи» (Главная)"
+        name: "stati_index"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/stati/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Статьи" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 3, value_type: "int" }
+          - { label: "Содержимое (текст над списком)", name: "body", widget: "markdown" }
+
   - name: "stati"
-    label: "Статьи"
+    label: "Публикации статей"
     folder: "content/stati"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # Исключаем _index.md из списка обычных статей, чтобы редактор случайно его не удалил
+    filter: { field: "is_index", value: false }
     fields:
-      - { label: "Заголовок", name: "title", widget: "string" }
-      - { label: "Содержимое", name: "body", widget: "markdown" }
+      - { label: "Заголовок статьи", name: "title", widget: "string" }
+      - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Содержимое статьи", name: "body", widget: "markdown" }
