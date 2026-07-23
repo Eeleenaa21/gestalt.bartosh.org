@@ -90,6 +90,7 @@ collections:
     create: true
     slug: "{{slug}}"
     # Исключаем _index.md из списка статей
+    filter: { field: "is_index", rule: "noneof", value: [true] }
     filter: { field: "menu", rule: "pattern", value: "^$" }
     fields:
       - { label: "Заголовок статьи", name: "title", widget: "string" }
