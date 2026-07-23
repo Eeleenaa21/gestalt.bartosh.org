@@ -91,7 +91,7 @@ collections:
     slug: "{{slug}}"
     filter: { field: "type", value: "post" }
     fields:
+      - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок статьи", name: "title", widget: "string" }
-      - { { name: "type", widget: "hidden", default: "post" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Содержимое статьи", name: "body", widget: "markdown" }
