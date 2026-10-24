@@ -1,0 +1,31 @@
+schema: spec-driven
+
+# Project context (optional)
+# Add only constraints that should guide OpenSpec artifacts and workflows.
+# Include constraints an agent cannot infer by reading the code.
+# Keep general project documentation and discoverable codebase facts out.
+context: |
+  Hugo static site (v0.155.2) for gestalt therapist Елена Бартош.
+  Build: `hugo`; dev server: `hugo server --disableFastRender`.
+  URLs use Russian transliteration (e.g., /обо-мне/).
+  Design: light natural tones (beige, gray-green); font Georgia / Times New Roman.
+  Banner (banner.jpg) shows on every page; photo at /images/photo.png.
+  Deploy: GitHub Pages at gestalt.bartosh.org (production baseURL via --baseURL in CI).
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# (No project-specific rules for proposal/specs/design/tasks at this time.)
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+operations:
+  apply:
+    guidance:
+      - Read full stdout+stderr of every shell command before proceeding.
+      - Check exit codes (`&& echo OK || echo FAIL`) for critical commands.
+      - Verify results (file exists, process running, output matches expectation).
+      - Do not hang on long processes; inspect stderr and check paths/errors.
+      - Check first lines of build/server output for errors before treating as success.
+  archive:
+    guidance: []

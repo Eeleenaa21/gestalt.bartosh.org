@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Елена Бартош",
+      "jobTitle": "Гештальт-терапевт, семейный консультант",
+      "description": "Семейный консультант, гештальт-терапевт. Очный приём в Эспоо (Финляндия) и консультации онлайн для русскоязычных клиентов.",
+      "url": "{{ .Site.BaseURL }}",
+      "telephone": "+358 505 650 393",
+      "email": "elena.bartosh@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Taivalmäki 9",
+        "addressLocality": "Espoo",
+        "addressCountry": "FI"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "Елена Бартош — Гештальт-терапия",
+      "description": "Семейное консультирование и гештальт-терапия. Очные сеансы в Эспоо и консультации онлайн.",
+      "url": "{{ .Site.BaseURL }}",
+      "telephone": "+358 505 650 393",
+      "email": "elena.bartosh@gmail.com",
+      "serviceType": ["гештальт-терапия", "семейное консультирование"],
+      "areaServed": {
+        "@type": "City",
+        "name": "Espoo"
+      }
+    }
+  ]
+}
+</script>
