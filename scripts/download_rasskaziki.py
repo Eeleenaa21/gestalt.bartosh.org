@@ -65,28 +65,37 @@ def download_page(url_path):
 
 def main():
     output_file = "content/rasskaziki.md"
+    pages = [
+        "/rasskaziki/",
+        "/rasskaziki/страница-2/",
+        "/rasskaziki/страница-3/",
+    ]
 
-    print(f"Downloading: Рассказики")
-    print(f"  URL: {URL_PATH}")
+    parts = []
+    for path in pages:
+        print(f"Downloading: Рассказики ({path})")
+        print(f"  URL: {BASE_URL}{path}")
 
-    html = download_page(URL_PATH)
-    if not html:
-        print(f"  FAILED: no HTML received")
-        return
+        html = download_page(path)
+        if not html:
+            print(f"  FAILED: no HTML received")
+            return
 
-    if "Page Not Found" in html or "Oops!" in html:
-        print(f"  FAILED: page returned 404")
-        return
+        if "Page Not Found" in html or "Oops!" in html:
+            print(f"  FAILED: page returned 404")
+            return
 
-    text = extract_text_from_html(html)
-    if not text:
-        print(f"  FAILED: could not extract text from HTML")
-        return
+        text = extract_text_from_html(html)
+        if not text:
+            print(f"  FAILED: could not extract text from HTML")
+            return
 
-    # Remove the intro text if present
-    intro = 'А это мои рассказики. Они  не про работу, но всё равно по мотивам. Такие крошечные зарисовки из одного предложения. Про жизнь.'
-    if intro in text:
-        text = text[text.find(intro) + len(intro):].lstrip()
+        # Remove the intro text if present (only on the first page)
+        intro = 'А это мои рассказики. Они  не про работу, но всё равно по мотивам. Такие крошечные зарисовки из одного предложения. Про жизнь.'
+        if intro in text:
+            text = text[text.find(intro) + len(intro):].lstrip()
+
+        parts.append(text.strip())
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("---\n")
@@ -97,7 +106,7 @@ def main():
         f.write("---\n\n")
         f.write("![Елена Бартош](/images/photo.png)\n\n")
         f.write("А это мои рассказики. Они не про работу, но всё равно по мотивам. Такие крошечные зарисовки из одного предложения. Про жизнь.\n\n")
-        f.write(text)
+        f.write("\n\n**\n\n".join(parts))
         f.write("\n")
 
     if os.path.exists(output_file):
