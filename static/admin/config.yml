@@ -8,12 +8,13 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
-site_url: https://test.bartosh.org/
+site_url: https://gestalt.bartosh.org/
 logo_url: /images/photo.png
 
 collections:
+
   # -------------------------------------------------------------
-  # 1. Все ключевые страницы сайта (с настройками меню)
+  # 1. Одиночные страницы (с настройками меню)
   # -------------------------------------------------------------
   - name: "pages"
     label: "Страницы"
@@ -41,11 +42,10 @@ collections:
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
       # --- Обо мне ---
-      - file: "content/obo-mne/_index.md"
+      - file: "content/about.md"
         label: "Страница «Обо мне»"
         name: "about"
         fields:
-          - { label: "Заголовок", name: "title", widget: "string" }
           - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
           - { label: "URL страницы", name: "url", widget: "string", default: "/obo-mne/", required: false }
           - label: "Настройки меню"
@@ -62,9 +62,31 @@ collections:
                   - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 2, value_type: "int" }
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
-      # --- Главная страница раздела «Статьи» (_index.md) ---
+      # --- Рассказики ---
+      - file: "content/rasskaziki.md"
+        label: "Рассказики"
+        name: "rasskaziki"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/rasskaziki/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Рассказики" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 6, value_type: "int" }
+          - { label: "Содержимое", name: "body", widget: "markdown" }
+
+      # --- Раздел «Статьи» (главная раздела) ---
       - file: "content/stati/_index.md"
-        label: "Раздел «Статьи» (Главная)"
+        label: "Раздел «Статьи» (главная)"
         name: "stati_index"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
@@ -84,6 +106,76 @@ collections:
                   - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 3, value_type: "int" }
           - { label: "Содержимое (текст над списком)", name: "body", widget: "markdown" }
 
+      # --- Раздел «Случаи из практики» (главная раздела) ---
+      - file: "content/sluchai/_index.md"
+        label: "Раздел «Случаи из практики» (главная)"
+        name: "sluchai_index"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/sluchai-iz-praktiki/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Случаи из практики" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 4, value_type: "int" }
+          - { label: "Содержимое (дисклеймер)", name: "body", widget: "markdown" }
+
+      # --- Раздел «Вопросы и ответы» (главная раздела) ---
+      - file: "content/voprosy/_index.md"
+        label: "Раздел «Вопросы и ответы» (главная)"
+        name: "voprosy_index"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/voprosy-i-otvety/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Вопросы и ответы" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 5, value_type: "int" }
+          - { label: "Содержимое (вступление)", name: "body", widget: "markdown" }
+
+      # --- Раздел «Читательский дневник» (главная раздела) ---
+      - file: "content/chitatelskiy-dnevnik/_index.md"
+        label: "Раздел «Читательский дневник» (главная)"
+        name: "chitatelskiy_dnevnik_index"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+          - { label: "URL страницы", name: "url", widget: "string", default: "/chitatelskiy-dnevnik/", required: false }
+          - label: "Настройки меню"
+            name: "menu"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Главное меню"
+                name: "main"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Название в меню", name: "name", widget: "string", default: "Читательский дневник" }
+                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 7, value_type: "int" }
+          - { label: "Содержимое (вступление)", name: "body", widget: "markdown" }
+
+  # -------------------------------------------------------------
+  # 2. Повторяющиеся разделы (папки, можно создавать новые записи)
+  # -------------------------------------------------------------
+
   - name: "stati"
     label: "Статьи"
     folder: "content/stati"
@@ -93,5 +185,42 @@ collections:
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок статьи", name: "title", widget: "string" }
+      - { label: "URL статьи", name: "url", widget: "string" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Содержимое статьи", name: "body", widget: "markdown" }
+
+  - name: "sluchai"
+    label: "Случаи из практики"
+    folder: "content/sluchai"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Заголовок случая", name: "title", widget: "string" }
+      - { label: "URL случая", name: "url", widget: "string" }
+      - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Порядок (weight)", name: "weight", widget: "number", default: 1, value_type: "int" }
+      - { label: "Содержимое случая", name: "body", widget: "markdown" }
+
+  - name: "voprosy"
+    label: "Вопросы и ответы"
+    folder: "content/voprosy"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Заголовок вопроса", name: "title", widget: "string" }
+      - { label: "URL вопроса", name: "url", widget: "string" }
+      - { label: "Категория", name: "category", widget: "string", required: false }
+      - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Порядок (weight)", name: "weight", widget: "number", default: 1, value_type: "int" }
+      - { label: "Ответ на вопрос", name: "body", widget: "markdown" }
+
+  - name: "chitatelskiy-dnevnik"
+    label: "Читательский дневник"
+    folder: "content/chitatelskiy-dnevnik"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Заголовок записи", name: "title", widget: "string" }
+      - { label: "URL записи", name: "url", widget: "string" }
+      - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Запись дневника", name: "body", widget: "markdown" }
