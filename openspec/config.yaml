@@ -5,12 +5,17 @@ schema: spec-driven
 # Include constraints an agent cannot infer by reading the code.
 # Keep general project documentation and discoverable codebase facts out.
 context: |
-  Hugo static site (v0.155.2) for gestalt therapist Елена Бартош.
+  Hugo static site (v0.168.0) for gestalt therapist Елена Бартош.
   Build: `hugo`; dev server: `hugo server --disableFastRender`.
   URLs use Russian transliteration (e.g., /обо-мне/).
   Design: light natural tones (beige, gray-green); font Georgia / Times New Roman.
   Banner (banner.jpg) shows on every page; photo at /images/photo.png.
   Deploy: GitHub Pages at gestalt.bartosh.org (production baseURL via --baseURL in CI).
+  Content management: Decap CMS (static/admin/config.yml, admin UI at /admin/).
+  Collections: pages (home, about, rasskaziki, stati index, sluchai index,
+  voprosy index, chitatelskiy-dnevnik index), stati, sluchai, voprosy,
+  chitatelskiy-dnevnik. Editor authenticates via GitHub OAuth, saves to repo,
+  GitHub Actions rebuilds and deploys automatically.
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
@@ -27,5 +32,8 @@ operations:
       - Verify results (file exists, process running, output matches expectation).
       - Do not hang on long processes; inspect stderr and check paths/errors.
       - Check first lines of build/server output for errors before treating as success.
+      - When content is edited via Decap CMS (/admin/), verify the resulting commit
+        triggers GitHub Actions build and the public/ output updates before treating
+        the change as published.
   archive:
     guidance: []
