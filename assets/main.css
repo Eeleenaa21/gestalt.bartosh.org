@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, .banner-role {
+h1, h2, h3 {
   font-family: var(--font-serif);
   letter-spacing: 0.01em;
 }
@@ -131,58 +131,6 @@ p:has(img[src$="photo.png"]) + blockquote {
   background: linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(236,235,230,0.32) 100%);
 }
 
-/* Верхний блок с картинкой-баннером */
-.banner-section {
-  padding: 1rem 0 0;
-}
-
-.banner-section .banner {
-  border-radius: 0 0 24px 24px;
-}
-
-.banner-section .banner-image {
-  height: 196px;
-}
-
-.banner {
-  position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 30px rgba(72, 96, 77, 0.08);
-}
-
-.banner-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-.banner-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1.25rem 1.3rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(29,24,20,0.72) 100%);
-  color: white;
-}
-
-.banner-role {
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.76rem;
-  margin: 0 0 0.25rem;
-}
-
-.banner-overlay h2 {
-  margin: 0;
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-  line-height: 1.1;
-}
-
 /* Карточки контента: главная (intro) и обычные страницы (single-page) */
 .intro,
 .single-page {
@@ -253,10 +201,6 @@ p:has(img[src$="photo.png"]) + blockquote {
   .nav-wrap,
   .footer-wrap {
     display: block;
-  }
-
-  .banner-image {
-    height: 200px;
   }
 
   .site-nav {
