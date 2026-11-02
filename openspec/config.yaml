@@ -7,7 +7,7 @@ schema: spec-driven
 context: |
   Hugo static site (v0.168.0) for gestalt therapist Елена Бартош.
   Build: `hugo`; dev server: `hugo server --disableFastRender`.
-  URLs use Russian transliteration (e.g., /обо-мне/).
+  URLs use Latin transliteration (e.g., /obo-mne/).
   Design: light natural tones (beige, gray-green); font Georgia / Times New Roman.
   Banner (banner.jpg) shows on every page; photo at /images/photo.png.
   Deploy: GitHub Pages at gestalt.bartosh.org (production baseURL via --baseURL in CI).
