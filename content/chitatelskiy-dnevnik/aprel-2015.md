@@ -2,6 +2,7 @@
 title: "Апрель 2015"
 url: "/chitatelskiy-dnevnik/aprel-2015/"
 draft: false
+weight: 13
 ---
 
 Самое главное впечатление месяца - "Ночные рассказы" Питера Хёга.

@@ -2,6 +2,7 @@
 title: "Сентябрь 2015"
 url: "/chitatelskiy-dnevnik/sentyabr-2015/"
 draft: false
+weight: 10
 ---
 
 Пять ярких звёзд:

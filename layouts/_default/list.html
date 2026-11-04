@@ -1,7 +1,25 @@
 {{ define "main" }}
   <article class="container single-page">
-    <div class="content-block">
-      {{ .Content }}
-    </div>
+    {{ if hasPrefix .Section "chitatelskiy" }}
+      <header class="page-heading">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
+      </header>
+      <div class="content-block">
+        {{ .Content }}
+      </div>
+      <div class="articles-list">
+        {{ range .Pages.ByWeight }}
+          <article class="article-item">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ .Summary | replaceRE "</p>[^<]*$" (printf " <a href=\"%s\">читать дальше</a></p>" .RelPermalink) | safeHTML }}
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <div class="content-block">
+        {{ .Content }}
+      </div>
+    {{ end }}
   </article>
 {{ end }}
