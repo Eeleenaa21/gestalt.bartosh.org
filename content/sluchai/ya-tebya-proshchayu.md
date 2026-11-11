@@ -2,6 +2,7 @@
 title: "Я тебя прощаю"
 url: "/sluchai-iz-praktiki/ya-tebya-proshchayu/"
 draft: false
+type: post
 weight: 1
 ---
 
