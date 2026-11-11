@@ -3,6 +3,7 @@ title: "Я — остров"
 url: "/stati/ya-ostrov/"
 type: "post"
 draft: false
+weight: 3
 ---
 
 К огда-то  я была материком. Огромным, целым, нераздельным материком.

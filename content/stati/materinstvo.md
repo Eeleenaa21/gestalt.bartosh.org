@@ -3,6 +3,7 @@ title: "Материнство (О чём не пишут в глянцевых 
 url: "/stati/materinstvo/"
 type: "post"
 draft: false
+weight: 10
 ---
 
 Материнство. (О чём не пишут в глянцевых журналах)

@@ -3,6 +3,7 @@ title: "Что такое гештальт-терапия?"
 url: "/stati/chto-takoe-gestalt-terapiya/"
 type: "post"
 draft: false
+weight: 1
 ---
 
 Ч то такое гештальт-терапия?
