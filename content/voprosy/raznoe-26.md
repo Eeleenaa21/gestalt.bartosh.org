@@ -2,6 +2,7 @@
 title: "Я не могу понять, что происходит. Всё запуталось"
 url: "/voprosy-i-otvety/raznoe/26/"
 category: "разное"
+type: post
 weight: 30
 draft: false
 ---

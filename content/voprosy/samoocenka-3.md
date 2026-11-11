@@ -2,6 +2,7 @@
 title: "Я не люблю себя. У меня низкая самооценка"
 url: "/voprosy-i-otvety/samoocenka/3/"
 category: "самооценка"
+type: post
 weight: 37
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Я бабушка взрослого внука, нашему мальчику 23 года. Так сложилась жизнь, что дочка рано осталась без мужа"
 url: "/voprosy-i-otvety/vzroslye-deti/14/"
 category: "взрослые-дети"
+type: post
 weight: 42
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Я не могу принять решение. Зависла"
 url: "/voprosy-i-otvety/raznoe/30/"
 category: "разное"
+type: post
 weight: 32
 draft: false
 ---

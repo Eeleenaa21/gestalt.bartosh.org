@@ -2,6 +2,7 @@
 title: "Я постоянно сравниваю себя с другими и чувствую себя неполноценным"
 url: "/voprosy-i-otvety/samoocenka/22/"
 category: "самооценка"
+type: post
 weight: 35
 draft: false
 ---

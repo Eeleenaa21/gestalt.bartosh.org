@@ -2,6 +2,7 @@
 title: "Я сейчас переживаю сильнейшее разочарование в жизни, потеряла веру в людей"
 url: "/voprosy-i-otvety/otnosheniya/8/"
 category: "отношения"
+type: post
 weight: 28
 draft: false
 ---

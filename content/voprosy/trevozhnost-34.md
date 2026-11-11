@@ -2,6 +2,7 @@
 title: "Я постоянно тревожусь. Не могу расслабиться"
 url: "/voprosy-i-otvety/trevozhnost/34/"
 category: "тревожность"
+type: post
 weight: 40
 draft: false
 ---

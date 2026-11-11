@@ -2,6 +2,7 @@
 title: "У меня панические атаки. Я не знаю, что делать"
 url: "/voprosy-i-otvety/trevozhnost/4/"
 category: "тревожность"
+type: post
 weight: 41
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Я вырастила сына сама, с его отцом развелись, когда сыну было 10 лет, и никакого участия в нашей жизни он не принимал"
 url: "/voprosy-i-otvety/vzroslye-deti/38/"
 category: "взрослые-дети"
+type: post
 weight: 46
 draft: false
 ---

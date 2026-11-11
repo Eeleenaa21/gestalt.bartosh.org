@@ -2,6 +2,7 @@
 title: "Моя проблема в том, что я никак не могу найти свою половинку"
 url: "/voprosy-i-otvety/otnosheniya/9/"
 category: "отношения"
+type: post
 weight: 29
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: "Развелась с мужем, когда дочке было 6 лет, растила её одна, не жалела на неё сил, денег и времени"
 url: "/voprosy-i-otvety/vzroslye-deti/18/"
 category: "взрослые-дети"
+type: post
 weight: 43
 draft: false
 ---

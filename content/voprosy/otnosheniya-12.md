@@ -2,6 +2,7 @@
 title: "Мой кавалер (мы с ним не расписаны) всё время доводит меня до истерики"
 url: "/voprosy-i-otvety/otnosheniya/12/"
 category: "отношения"
+type: post
 weight: 23
 draft: false
 ---
