@@ -2,6 +2,7 @@
 title: "Не скажу"
 url: "/sluchai-iz-praktiki/ne-skazhu/"
 draft: false
+type: post
 weight: 5
 ---
 

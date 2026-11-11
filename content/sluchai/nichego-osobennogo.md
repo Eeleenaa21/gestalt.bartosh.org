@@ -2,6 +2,7 @@
 title: "Ничего особенного"
 url: "/sluchai-iz-praktiki/nichego-osobennogo/"
 draft: false
+type: post
 weight: 7
 ---
 

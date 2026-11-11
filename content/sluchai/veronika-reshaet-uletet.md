@@ -2,6 +2,7 @@
 title: "Вероника решает улететь"
 url: "/sluchai-iz-praktiki/veronika-reshaet-uletet/"
 draft: false
+type: post
 weight: 10
 ---
 

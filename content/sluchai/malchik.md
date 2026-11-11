@@ -2,6 +2,7 @@
 title: "Мальчик"
 url: "/sluchai-iz-praktiki/malchik/"
 draft: false
+type: post
 weight: 3
 ---
 
