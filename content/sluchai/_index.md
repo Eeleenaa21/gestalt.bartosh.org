@@ -3,11 +3,12 @@ title: Случаи из практики
 url: /sluchai-iz-praktiki/
 description: Терапевтические случаи с согласия клиентов
 draft: false
+type: post
 menu:
   main:
     name: Случаи из практики
     weight: 4
-weight: 1
+weight: 0
 ---
 ![Елена Бартош](/images/photo.png "vvv")
 

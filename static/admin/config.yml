@@ -106,28 +106,6 @@ collections:
                   - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 3, value_type: "int" }
           - { label: "Содержимое (текст над списком)", name: "body", widget: "markdown" }
 
-      # --- Раздел «Случаи из практики» (главная раздела) ---
-      - file: "content/sluchai/_index.md"
-        label: "«Случаи из практики» (главная)"
-        name: "sluchai_index"
-        fields:
-          - { label: "Заголовок", name: "title", widget: "string" }
-          - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
-          - { label: "URL страницы", name: "url", widget: "string", default: "/sluchai-iz-praktiki/", required: false }
-          - label: "Настройки меню"
-            name: "menu"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Главное меню"
-                name: "main"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Название в меню", name: "name", widget: "string", default: "Случаи из практики" }
-                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 4, value_type: "int" }
-          - { label: "Содержимое (дисклеймер)", name: "body", widget: "markdown" }
-
       # --- Раздел «Вопросы и ответы» (главная раздела) ---
       - file: "content/voprosy/_index.md"
         label: "«Вопросы и ответы» (главная)"
