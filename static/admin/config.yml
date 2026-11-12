@@ -198,6 +198,7 @@ collections:
     filter: { field: "type", value: "post" }
     sort_by: "weight"
     fields:
+      - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
       - { label: "URL случая", name: "url", widget: "string" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
@@ -212,6 +213,7 @@ collections:
     filter: { field: "type", value: "post" }
     sort_by: "weight"
     fields:
+      - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок вопроса", name: "title", widget: "string" }
       - { label: "URL вопроса", name: "url", widget: "string" }
       - { label: "Категория", name: "category", widget: "string", required: false }
@@ -227,6 +229,7 @@ collections:
     filter: { field: "type", value: "post" }
     sort_by: "weight"
     fields:
+      - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок записи", name: "title", widget: "string" }
       - { label: "URL записи", name: "url", widget: "string" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
