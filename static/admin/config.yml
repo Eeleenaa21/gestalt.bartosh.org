@@ -21,7 +21,7 @@ collections:
     files:
       # --- Главная ---
       - file: "content/_index.md"
-        label: "Главная страница"
+        label: "Главная"
         name: "home"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
@@ -38,12 +38,12 @@ collections:
                 required: false
                 fields:
                   - { label: "Название в меню", name: "name", widget: "string", default: "Главная" }
-                  - { label: "Порядок в меню (weight)", name: "weight", widget: "number", default: 1, value_type: "int" }
+                  - { label: "Порядок в меню", name: "weight", widget: "number", default: 1, value_type: "int" }
           - { label: "Содержимое", name: "body", widget: "markdown" }
 
       # --- Обо мне ---
       - file: "content/about.md"
-        label: "Страница «Обо мне»"
+        label: "Обо мне"
         name: "about"
         fields:
           - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
@@ -86,7 +86,7 @@ collections:
 
       # --- Раздел «Статьи» (главная раздела) ---
       - file: "content/stati/_index.md"
-        label: "Раздел «Статьи» (главная)"
+        label: "«Статьи» (главная)"
         name: "stati_index"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
@@ -108,7 +108,7 @@ collections:
 
       # --- Раздел «Случаи из практики» (главная раздела) ---
       - file: "content/sluchai/_index.md"
-        label: "Раздел «Случаи из практики» (главная)"
+        label: "«Случаи из практики» (главная)"
         name: "sluchai_index"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
@@ -130,7 +130,7 @@ collections:
 
       # --- Раздел «Вопросы и ответы» (главная раздела) ---
       - file: "content/voprosy/_index.md"
-        label: "Раздел «Вопросы и ответы» (главная)"
+        label: "«Вопросы и ответы» (главная)"
         name: "voprosy_index"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
@@ -152,7 +152,7 @@ collections:
 
       # --- Раздел «Читательский дневник» (главная раздела) ---
       - file: "content/chitatelskiy-dnevnik/_index.md"
-        label: "Раздел «Читательский дневник» (главная)"
+        label: "«Читательский дневник» (главная)"
         name: "chitatelskiy_dnevnik_index"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
