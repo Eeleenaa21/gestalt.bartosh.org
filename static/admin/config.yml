@@ -208,7 +208,7 @@ collections:
       - field: title
         label: "По алфавиту"
     nested:
-      depth: 100
+      depth: 10
       summary: '{{title}}'
       subfolders: false
     meta:
