@@ -18,6 +18,12 @@ collections:
   # -------------------------------------------------------------
   - name: "pages"
     label: "Страницы"
+    sortable_fields:
+      - field: weight
+        label: "По порядку"
+        default_sort: asc
+      - field: title
+        label: "По алфавиту"
     files:
       # --- Главная ---
       - file: "content/_index.md"
