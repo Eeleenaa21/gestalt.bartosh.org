@@ -184,7 +184,8 @@ collections:
     filter: { field: "type", value: "post" }
     sortable_fields:
       - field: weight
-        label: "По весу"
+        label: "По порядку"
+        default_sort: asc
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок статьи", name: "title", widget: "string" }
@@ -200,7 +201,8 @@ collections:
     filter: { field: "type", value: "post" }
     sortable_fields:
       - field: weight
-        label: "По весу"
+        label: "По порядку"
+        default_sort: asc
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
@@ -217,7 +219,8 @@ collections:
     filter: { field: "type", value: "post" }
     sortable_fields:
       - field: weight
-        label: "По весу"
+        label: "По порядку"
+        default_sort: asc
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок вопроса", name: "title", widget: "string" }
@@ -235,7 +238,8 @@ collections:
     filter: { field: "type", value: "post" }
     sortable_fields:
       - field: weight
-        label: "По весу"
+        label: "По порядку"
+        default_sort: asc
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок записи", name: "title", widget: "string" }
