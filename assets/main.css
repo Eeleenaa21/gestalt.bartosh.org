@@ -139,6 +139,7 @@ p:has(img[src$="photo.png"]) + blockquote {
   border-radius: 22px;
   padding: 1.5rem 1.6rem;
   margin-bottom: 1.25rem;
+  text-align: justify;
 }
 
 /* Заголовок страницы в разделах (Статьи, Случаи и т.д.) */
@@ -164,6 +165,11 @@ p:has(img[src$="photo.png"]) + blockquote {
   color: var(--text);
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+/* Основной текст страниц — выравнивание по обоим краям */
+.content-block {
+  text-align: justify;
 }
 
 /* Ссылки внутри текста страниц */
