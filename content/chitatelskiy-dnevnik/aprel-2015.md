@@ -1,6 +1,7 @@
 ---
 title: "Апрель 2015"
 url: "/chitatelskiy-dnevnik/aprel-2015/"
+type: post
 draft: false
 weight: 13
 ---

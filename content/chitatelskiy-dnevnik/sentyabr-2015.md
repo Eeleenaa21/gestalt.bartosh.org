@@ -1,6 +1,7 @@
 ---
 title: "Сентябрь 2015"
 url: "/chitatelskiy-dnevnik/sentyabr-2015/"
+type: post
 draft: false
 weight: 10
 ---
