@@ -207,6 +207,14 @@ collections:
         default_sort: asc
       - field: title
         label: "По алфавиту"
+    nested:
+      depth: 100
+      summary: '{{title}}'
+      subfolders: false
+    meta:
+      path:
+        widget: string
+        label: 'Путь'
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
