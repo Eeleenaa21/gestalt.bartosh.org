@@ -186,6 +186,8 @@ collections:
       - field: weight
         label: "По порядку"
         default_sort: asc
+      - field: title
+        label: "По алфавиту"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок статьи", name: "title", widget: "string" }
@@ -203,6 +205,8 @@ collections:
       - field: weight
         label: "По порядку"
         default_sort: asc
+      - field: title
+        label: "По алфавиту"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
@@ -221,6 +225,8 @@ collections:
       - field: weight
         label: "По порядку"
         default_sort: asc
+      - field: title
+        label: "По алфавиту"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок вопроса", name: "title", widget: "string" }
@@ -240,6 +246,8 @@ collections:
       - field: weight
         label: "По порядку"
         default_sort: asc
+      - field: title
+        label: "По алфавиту"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок записи", name: "title", widget: "string" }
