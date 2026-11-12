@@ -2,7 +2,6 @@
 title: "Очень люблю этого человека, готова всё для него сделать, всё стерпеть и простить"
 url: "/voprosy-i-otvety/otnosheniya/28/"
 category: "отношения"
-type: post
 weight: 24
 draft: false
 ---

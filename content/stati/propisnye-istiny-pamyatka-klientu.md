@@ -1,5 +1,4 @@
 ---
-type: post
 title: Прописные истины. Памятка клиенту
 url: /stati/propisnye-istiny-pamyatka-klientu/
 draft: false

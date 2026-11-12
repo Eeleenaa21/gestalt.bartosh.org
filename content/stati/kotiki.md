@@ -1,5 +1,4 @@
 ---
-type: post
 title: Котики
 url: /stati/kotiki/
 draft: false

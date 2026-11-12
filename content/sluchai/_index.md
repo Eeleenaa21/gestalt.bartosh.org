@@ -7,7 +7,6 @@ menu:
   main:
     name: Случаи из практики
     weight: 4
-weight: 0
 ---
 ![Елена Бартош](/images/photo.png "vvv")
 

@@ -2,7 +2,6 @@
 title: "...я вышла замуж за человека, которого мои родственники категорически не одобрили"
 url: "/voprosy-i-otvety/vzroslye-deti/32/"
 category: "взрослые-дети"
-type: post
 weight: 44
 draft: false
 ---

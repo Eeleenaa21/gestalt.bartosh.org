@@ -2,7 +2,6 @@
 title: "Я не могу гордиться собой. Всё время чувствую, что недостаточно хорош"
 url: "/voprosy-i-otvety/samoocenka/43/"
 category: "самооценка"
-type: post
 weight: 39
 draft: false
 ---

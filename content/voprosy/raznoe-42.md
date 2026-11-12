@@ -2,7 +2,6 @@
 title: "Я не понимаю, что происходит. Всё перевернулось с ног на голову"
 url: "/voprosy-i-otvety/raznoe/42/"
 category: "разное"
-type: post
 weight: 33
 draft: false
 ---

@@ -2,7 +2,6 @@
 title: "Изо всех сил подстраиваюсь к мужчине, стараюсь ему угодить, забываю о своих интересах"
 url: "/voprosy-i-otvety/otnosheniya/45/"
 category: "отношения"
-type: post
 weight: 25
 draft: false
 ---

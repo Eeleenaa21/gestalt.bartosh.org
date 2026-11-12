@@ -2,7 +2,6 @@
 title: "...как мне повлиять на дочь, объяснить ей, что жених ей не пара?"
 url: "/voprosy-i-otvety/vzroslye-deti/37/"
 category: "взрослые-дети"
-type: post
 weight: 45
 draft: false
 ---
