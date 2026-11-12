@@ -182,7 +182,9 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "post" }
-    sort_by: "weight"
+    sortable_fields:
+      - field: weight
+        label: "По весу"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок статьи", name: "title", widget: "string" }
@@ -196,7 +198,9 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "post" }
-    sort_by: weight
+    sortable_fields:
+      - field: weight
+        label: "По весу"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
@@ -211,7 +215,9 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "post" }
-    sort_by: weight
+    sortable_fields:
+      - field: weight
+        label: "По весу"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок вопроса", name: "title", widget: "string" }
@@ -227,10 +233,13 @@ collections:
     create: true
     slug: "{{slug}}"
     filter: { field: "type", value: "post" }
-    sort_by: weight
+    sortable_fields:
+      - field: weight
+        label: "По весу"
     fields:
       - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок записи", name: "title", widget: "string" }
       - { label: "URL записи", name: "url", widget: "string" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Порядок (weight)", name: "weight", widget: "number", default: 1, value_type: "int" }
       - { label: "Запись дневника", name: "body", widget: "markdown" }
