@@ -2,6 +2,7 @@
 title: "Вопросы и ответы"
 url: "/voprosy-i-otvety/"
 draft: false
+weight: 0
 menu:
   main:
     name: "Вопросы и ответы"

@@ -3,6 +3,7 @@ title: "Статьи"
 url: "/stati/"
 type: "index"
 draft: false
+weight: 0
 menu:
   main:
     name: "Статьи"

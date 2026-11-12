@@ -3,7 +3,7 @@ title: "Читательский дневник"
 description: "Заметки о прочитанных книгах"
 url: "/chitatelskiy-dnevnik/"
 draft: false
-type: index
+weight: 0
 menu:
   main:
     name: "Читательский дневник"
