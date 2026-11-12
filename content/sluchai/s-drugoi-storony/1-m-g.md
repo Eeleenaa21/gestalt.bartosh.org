@@ -3,7 +3,6 @@ title: "М.Г., жен."
 url: "/sluchai-iz-praktiki/s-drugoi-storony/1-m-g/"
 draft: false
 weight: 2
-type: post
 ---
 
 1. М.Г., жен.

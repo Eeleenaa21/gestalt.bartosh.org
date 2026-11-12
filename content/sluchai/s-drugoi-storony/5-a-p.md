@@ -3,7 +3,6 @@ title: "A.П., жен."
 url: "/sluchai-iz-praktiki/s-drugoi-storony/5-a-p/"
 draft: false
 weight: 6
-type: post
 ---
 
 5. А.П., жен.

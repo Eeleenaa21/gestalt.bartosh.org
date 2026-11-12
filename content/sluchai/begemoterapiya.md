@@ -2,7 +2,6 @@
 title: "Бегемототерапия"
 url: "/sluchai-iz-praktiki/begemoterapiya/"
 draft: false
-type: post
 weight: 4
 ---
 

@@ -2,7 +2,6 @@
 title: "Голоса"
 url: "/sluchai-iz-praktiki/golosa/"
 draft: false
-type: post
 weight: 8
 ---
 

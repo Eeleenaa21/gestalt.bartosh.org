@@ -1,7 +1,6 @@
 ---
 title: "С другой стороны"
 url: "/sluchai-iz-praktiki/s-drugoi-storony/"
-type: post
 draft: false
 weight: 1
 ---

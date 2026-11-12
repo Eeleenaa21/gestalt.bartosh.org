@@ -2,7 +2,6 @@
 title: "Камешки в океан"
 url: "/sluchai-iz-praktiki/kameshki-v-okean/"
 draft: false
-type: post
 weight: 2
 ---
 

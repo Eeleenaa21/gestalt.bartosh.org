@@ -178,7 +178,6 @@ collections:
     folder: "content/sluchai"
     create: true
     slug: "{{slug}}"
-    filter: { field: "type", value: "post" }
     sortable_fields:
       - field: weight
         label: "По порядку"
@@ -194,7 +193,6 @@ collections:
         widget: string
         label: 'Путь'
     fields:
-      - { name: "type", widget: "hidden", default: "post" }
       - { label: "Заголовок случая", name: "title", widget: "string" }
       - { label: "URL случая", name: "url", widget: "string" }
       - { label: "Черновик", name: "draft", widget: "boolean", default: false, required: false }

@@ -2,7 +2,6 @@
 title: "Маркиза ангелов"
 url: "/sluchai-iz-praktiki/markiza-angelov/"
 draft: false
-type: post
 weight: 9
 ---
 

@@ -3,7 +3,6 @@ title: Случаи из практики
 url: /sluchai-iz-praktiki/
 description: Терапевтические случаи с согласия клиентов
 draft: false
-type: post
 menu:
   main:
     name: Случаи из практики

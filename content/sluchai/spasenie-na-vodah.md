@@ -2,7 +2,6 @@
 title: "Спасение на водах, а также в горах и в небесах"
 url: "/sluchai-iz-praktiki/spasenie-na-vodah/"
 draft: false
-type: post
 weight: 6
 ---
 
