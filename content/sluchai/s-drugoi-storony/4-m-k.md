@@ -2,7 +2,7 @@
 title: "М.К., муж."
 url: "/sluchai-iz-praktiki/s-drugoi-storony/4-m-k/"
 draft: false
-weight: 4
+weight: 5
 type: post
 ---
 

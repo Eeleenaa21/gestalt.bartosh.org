@@ -3,7 +3,7 @@ title: "С другой стороны"
 url: "/sluchai-iz-praktiki/s-drugoi-storony/"
 type: post
 draft: false
-weight: 11
+weight: 1
 ---
 
 Я долго думала, где разместить этот цикл. Это описание случаев, но сами герои никогда не были у меня на приёме. Хотя...
